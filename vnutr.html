@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>КДК | Центр медико-социальной реабилитации клиники доктора Калюжной</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ХЕДЕР -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-inner">
+                <div class="license"><i class="fas fa-certificate"></i> Лицензия Минздрава № Л041-01126-23/01066181 — <a
+                        href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank">проверить</a></div>
+                <div style="display:flex;gap:16px;align-items:center;">
+                    <span><i class="fas fa-map-marker-alt" style="color:#6EC6FF"></i> Краснодар, ул. Алма-Атинская,
+                        99</span>
+                    <span><i class="fas fa-clock" style="color:#6EC6FF"></i> Круглосуточно 24/7</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <a href="./index.html" class="logo">
+                <div class="logo-title">КДК</div>
+                <div class="logo-sub">Центр медико-социальной реабилитации клиники доктора Калюжной</div>
+            </a>
+            <div class="header-contacts">
+                <a href="tel:+79034110003" class="header-phone">+7 (903) 411–00–03</a>
+                <div class="header-meta">
+                    <span class="anon-badge"><i class="fas fa-lock"></i> Звонок анонимен</span>
+                    <a href="https://wa.me/79034110003" style="color:var(--gray-400);text-decoration:none"><i
+                            class="fab fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
+                    <a href="https://t.me/kdk_bot" style="color:var(--gray-400);text-decoration:none"><i
+                            class="fab fa-telegram" style="color:#0088cc"></i> Telegram</a>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-red"
+                    onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                        class="fas fa-phone-alt"></i> Вызвать врача</button>
+                <button class="btn btn-teal"
+                    onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                        class="fas fa-comments"></i> Консультация</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="#about">О центре</a>
+                <a href="./vnutr.html">Направления</a>
+                <a href="#doctors">Врачи</a>
+                <a href="#program">Программа</a>
+                <a href="#family">Семье</a>
+                <a href="#conditions">Условия</a>
+                <a href="#prices">Цены</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+
+        <!-- ЭТАЖ 2: ПЕРВЫЙ ЭКРАН -->
+        <section class="hero" id="top">
+            <div class="hero-inner">
+                <div>
+                    <div class="hero-eyebrow"><i class="fas fa-wine-glass-alt"></i> Анонимная помощь в Ростове-на-Дону
+                    </div>
+                    <h1>Реабилитация алкоголиков <span>в клинике доктора Калюжной</span></h1>
+                    <p class="hero-desc">Эффективное восстановление физического и психологического здоровья для
+                        достижения
+                        стабильной ремиссии и возвращения к нормальной жизни. Профессиональная помощь на любом этапе
+                        зависимости.</p>
+
+                    <div class="hero-chips">
+                        <div class="hero-chip"><i class="fas fa-user-md"></i> Наркологи и аддиктологи</div>
+                        <div class="hero-chip"><i class="fas fa-lock"></i> 100% Конфиденциально</div>
+                        <div class="hero-chip"><i class="fas fa-shield-alt"></i> Безопасный стационар</div>
+                        <div class="hero-chip"><i class="fas fa-home"></i> Выезд мотивационной группы</div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#consultation" class="btn-hero"><i class="fas fa-phone-alt"></i> Анонимная
+                            консультация</a>
+                        <a href="#program" class="btn-hero-outline"><i class="fas fa-scroll"></i> Задачи и методы</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-photo-placeholder">👩‍⚕️</div>
+                    <h3>Анонимное обращение</h3>
+                    <p>Получите информацию о программах и специфике методов реабилитации по телефону:</p>
+                    <a href="tel:+79034011023"
+                        style="display:block; text-align:center; font-size:20px; font-weight:700; color:var(--navy); margin:12px 0; text-decoration:none;">+7
+                        (903) 401–10–23</a>
+                    <input type="text" class="hero-form-input" placeholder="Имя пациента/родственника">
+                    <input type="tel" class="hero-form-input" placeholder="+7 (___) ___-__-__">
+                    <button class="hero-form-btn" onclick="alert('Заявка принята.')"><i class="fas fa-paper-plane"></i>
+                        Связаться со специалистом</button>
+                    <p class="hero-form-note"><i class="fas fa-certificate"></i> Без постановки на наркологический учёт.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ЭТАЖ 5: ВРАЧИ -->
+        <section id="doctors">
+            <div class="container">
+                <div class="section-head-row">
+                    <div>
+                        <div class="section-label">Специалисты</div>
+                        <h2 class="section-title">Врачи, которые работают у нас в штате</h2>
+                        <p class="section-desc">Не приглашённые специалисты — постоянная команда с дипломами и
+                            подтверждённым
+                            стажем.
+                        </p>
+                    </div>
+                    <a href="#" class="link-more">Все врачи <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="grid-3">
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👩‍⚕️</span><span class="doctor-badge">Главный врач</span></div>
+                        <div class="doctor-body">
+                            <h3>Калюжная Марина Александровна</h3>
+                            <div class="doctor-spec">Психиатр-нарколог, психотерапевт</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 17
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,8</strong> <a
+                                    href="#">47
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👨‍⚕️</span></div>
+                        <div class="doctor-body">
+                            <h3>Логинов Иван Михайлович</h3>
+                            <div class="doctor-spec">Психиатр-нарколог</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 14
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>5,0</strong> <a
+                                    href="#">38
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👩‍⚕️</span></div>
+                        <div class="doctor-body">
+                            <h3>Ситенкова Кристина Владимировна</h3>
+                            <div class="doctor-spec">Клинический психолог, аддиктолог</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 9
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,9</strong> <a
+                                    href="#">29
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="margin-top:28px;background:var(--gray-50);border-radius:var(--radius);padding:18px 24px;border:1px solid var(--gray-200);display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+                    <i class="fas fa-stethoscope" style="color:var(--teal);font-size:20px"></i>
+                    <span style="font-size:14px;color:var(--gray-600)">В штате клиники также работают: <strong>невролог,
+                            терапевт,
+                            диетолог, специалист по социальной работе, педагог</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="seo-section" style="padding: 60px 0 20px 0; background: var(--white);">
+            <div class="container">
+
+                <h2 style="color: var(--navy); font-size: 28px; font-weight: 700; margin-bottom: 20px;">Реабилитация
+                    алкоголиков в Ростове-на-Дону</h2>
+                <p style="margin-bottom: 16px;">При лечении алкогольной зависимости в клинике доктора Калюжной
+                    внимание
+                    уделяется реабилитации. Восстановление важно для достижения стабильной ремиссии, нормальной
+                    жизни. Для
+                    получения информации о специфике методов реабилитации, доступных программах можно позвонить
+                    специалистам
+                    клиники по анонимному телефону <strong>+7 (903) 401–10–23</strong>.</p>
+
+                <h3 style="color: var(--navy); font-size: 20px; font-weight: 600; margin: 24px 0 12px 0;">Задачи
+                    реабилитации алкоголиков</h3>
+                <p style="margin-bottom: 16px;">Восстановление при алкогольной или наркотической зависимости ставит
+                    стратегическую цель: добиться устойчивой ремиссии у пациента. Этот процесс включает несколько
+                    фундаментальных задач, каждая из которых имеет значение для выздоровления.</p>
+
+                <h4 style="color: var(--navy); font-size: 16px; font-weight: 600; margin: 16px 0 8px 0;">Осознание
+                    необходимости изменений</h4>
+                <p style="margin-bottom: 16px;">Первый шаг на пути к выздоровлению – осознание зависимым проблемы.
+                    Это
+                    касается понимания того, что алкоголь или наркотики не только не приносят облегчения, но и
+                    активно
+                    разрушают жизнь. Важно также развенчать мифы, которые пациент мог сформировать в попытках
+                    оправдать своё
+                    поведение. Такие убеждения включают в себя идеи о том, что алкоголь – эффективное средство для
+                    расслабления или социальной адаптации.</p>
+
+                <h4 style="color: var(--navy); font-size: 16px; font-weight: 600; margin: 16px 0 8px 0;">
+                    Идентификация
+                    причин зависимости</h4>
+                <p style="margin-bottom: 16px;">На пути к выздоровлению важно понять и устранить причины, которые
+                    привели к
+                    развитию алкоголизма или наркомании. Часто они скрыты в психологическом дискомфорте, который
+                    человек
+                    пытался снять с помощью спиртного или ПАВ – тревогу, стресс или <a
+                        href="https://rnd.dr-kalyuzhnaya.ru/uslugi/psihiatriya/lechenie-depressii/"
+                        style="color: var(--teal); text-decoration: underline;"><strong>депрессию</strong></a>. С
+                    течением
+                    времени этанол и наркотики перестают быть эффективными помощниками, но привычка уже
+                    сформирована,
+                    прекратить пить становится трудно.</p>
+
+                <h4 style="color: var(--navy); font-size: 16px; font-weight: 600; margin: 16px 0 8px 0;">Развитие
+                    альтернативных навыков, поведенческих моделей</h4>
+                <p style="margin-bottom: 16px;">После изоляции от обычной среды – катализатора употребления –
+                    следующий этап
+                    – создание новых здоровых привычек. Важно научиться справляться со стрессом без алкоголя,
+                    устанавливать,
+                    соблюдать личные границы, эффективно общаться и реализовываться в новых, здоровых формах. На
+                    этом этапе
+                    используются разные методы – психотерапия, арт-терапия, когнитивно-поведенческая и другие
+                    подходы к
+                    формированию положительных моделей поведения.</p>
+
+                <h4 style="color: var(--navy); font-size: 16px; font-weight: 600; margin: 16px 0 8px 0;">Личная
+                    терапия,
+                    social интеграция</h4>
+                <p style="margin-bottom: 16px;">Каждый план реабилитации включает специфические задачи в зависимости
+                    от
+                    потребностей. Это может быть восстановление семейных связей, поддержка близких, страдающих от
+                    созависимости, активная социализация. Часто в курс терапии входят образовательные программы,
+                    которые
+                    помогут человеку совершить изменения в жизни для полного восстановления, интеграции в общество.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ЭТАЖ 8: ЭТАПЫ ПРОГРАММЫ -->
+        <section id="program" class="bg-gray">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-label">Как работает программа</div>
+                    <h2 class="section-title">Путь от обращения до устойчивой ремиссии</h2>
+                    <p class="section-desc">Каждый этап — конкретные медицинские и терапевтические задачи. Никаких
+                        абстрактных
+                        обещаний.</p>
+                </div>
+                <div class="stages">
+                    <div class="stage">
+                        <div class="stage-line">
+                            <div class="stage-dot" style="background:var(--teal)">1</div>
+                            <div class="stage-connector"></div>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Консультация и оформление</h3>
+                            <p>Звонок на горячую линию или обращение через форму. Бесплатная консультация врача. Если
+                                близкий
+                                отказывается — возможен выезд мотивационной группы. Специалисты проводят
+                                профессиональную беседу
+                                без
+                                давления и угроз: в 92% случаев человек соглашается на лечение в день выезда.</p>
+                            <div class="stage-tags"><span class="tag">Бесплатно</span><span
+                                    class="tag">Анонимно</span><span class="tag">24/7</span></div>
+                        </div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-line">
+                            <div class="stage-dot" style="background:var(--navy)">2</div>
+                            <div class="stage-connector"></div>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Детоксикация</h3>
+                            <p>Снятие абстинентного синдрома, безопасное очищение организма. Капельницы, медикаментозная
+                                поддержка,
+                                круглосуточное наблюдение врачей. Диагностика: анализы крови, ЭКГ, УЗИ. Восстановление
+                                физического
+                                состояния как фундамент для дальнейшей работы.</p>
+                            <div class="stage-tags"><span class="tag">Медикаменты</span><span
+                                    class="tag">Анализы</span><span class="tag">Наблюдение 24/7</span></div>
+                        </div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-line">
+                            <div class="stage-dot" style="background:#4361EE">3</div>
+                            <div class="stage-connector"></div>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Стационарная реабилитация</h3>
+                            <p>Глубокая психотерапевтическая работа по авторской программе медико-социальной
+                                реабилитации.
+                                Индивидуальные и групповые сессии с дипломированными специалистами. КПТ,
+                                гештальт-подход,
+                                экзистенциальный
+                                анализ, психодиагностика, арт-терапия. Ежедневные врачебные обходы, медикаментозное
+                                сопровождение.</p>
+                            <div class="stage-tags"><span class="tag">КПТ</span><span class="tag">Гештальт</span><span
+                                    class="tag">Арт-терапия</span><span class="tag">Йога</span></div>
+                        </div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-line">
+                            <div class="stage-dot" style="background:var(--green)">4</div>
+                            <div class="stage-connector"></div>
+                        </div>
+                        <div class="stage-content">
+                            <h3>Работа с семьёй</h3>
+                            <p>Зависимость — болезнь всей семейной системы. Семейные сессии с психотерапевтом, работа с
+                                созависимостью,
+                                обучение правильному взаимодействию с зависимым. Цель — создать среду, которая
+                                поддерживает
+                                ремиссию, а не
+                                провоцирует срыв.</p>
+                            <div class="stage-tags"><span class="tag">Семейные сессии</span><span
+                                    class="tag">Созависимость</span></div>
+                        </div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-line">
+                            <div class="stage-dot" style="background:#B8860B">5</div>
+                        </div>
+                        <div class="stage-content">
+                            <h3>ПЛП — Постлечебная программа</h3>
+                            <p>Плавное возвращение в социум под наблюдением кураторов. Помощь в трудоустройстве,
+                                социализация,
+                                сопровождение 24/7. При угрозе срыва — немедленное подключение специалиста. Регулярные
+                                проверочные сессии
+                                для поддержания ремиссии.</p>
+                            <div class="stage-tags"><span class="tag">ПЛП</span><span
+                                    class="tag">Трудоустройство</span><span class="tag">Поддержка 24/7</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ЭТАЖ 10: РАБОТА С СЕМЬЁЙ (новый блок) -->
+        <section id="family" class="bg-sand">
+            <div class="container">
+                <div class="family-block">
+                    <div>
+                        <div class="section-label">Семейная работа</div>
+                        <h2 class="section-title">Зависимость затрагивает всю семью. Мы работаем с каждым</h2>
+                        <p style="font-size:16px;color:var(--gray-600);line-height:1.75;margin-bottom:28px">Химическая
+                            зависимость —
+                            системная болезнь, которая меняет поведение и отношения всей семьи. Лечить только пациента,
+                            не
+                            работая с его
+                            окружением — значит возвращать человека в ту же среду, которая поддерживала болезнь.</p>
+                        <p style="font-size:16px;color:var(--gray-600);line-height:1.75;margin-bottom:32px">Мы включаем
+                            семью в
+                            процесс реабилитации с первых недель — это обязательная часть нашей программы, а не
+                            дополнительная
+                            услуга.
+                        </p>
+                        <button class="btn btn-teal"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                                class="fas fa-phone-alt"></i> Проконсультироваться о семейной программе</button>
+                    </div>
+                    <div class="family-visual">
+                        <div class="family-point">
+                            <div class="family-point-icon"><i class="fas fa-comments"></i></div>
+                            <div class="family-point-text">
+                                <h4>Семейные сессии с психотерапевтом</h4>
+                                <p>Совместная работа с пациентом и близкими для восстановления здоровых отношений</p>
+                            </div>
+                        </div>
+                        <div class="family-point">
+                            <div class="family-point-icon"><i class="fas fa-heart-broken"></i></div>
+                            <div class="family-point-text">
+                                <h4>Работа с созависимостью</h4>
+                                <p>Психолог помогает родственникам понять свои паттерны и выйти из деструктивной роли
+                                </p>
+                            </div>
+                        </div>
+                        <div class="family-point">
+                            <div class="family-point-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="family-point-text">
+                                <h4>Обучение правильному взаимодействию</h4>
+                                <p>Как говорить с зависимым, что делать при угрозе срыва, как не стать частью болезни
+                                </p>
+                            </div>
+                        </div>
+                        <div class="family-point">
+                            <div class="family-point-icon"><i class="fas fa-road"></i></div>
+                            <div class="family-point-text">
+                                <h4>Поддержка на этапе ПЛП</h4>
+                                <p>Сопровождение семьи после выписки пациента: как сохранить ремиссию дома</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-section" style="padding: 50px 0; background: var(--gray-50);">
+            <div class="container">
+
+                <p style="margin-bottom: 16px;">В частных клиниках лечения зависимостей не применяются методы <a
+                        href="https://rnd.dr-kalyuzhnaya.ru/uslugi/alkogolizm/lechenie-prinuditelno/"
+                        style="color: var(--teal); text-decoration: underline;"><strong>принудительного лечения
+                            алкоголизма</strong></a>. Для сохранения эффективности терапии нужно, чтобы пациент
+                    принял
+                    решение избавиться от проблемы. Это позволяет активизировать процессы в мозге, которые
+                    способствуют
+                    перестройке нейронных связей, формированию новых, здоровых привычек. Государственные клиники
+                    иногда
+                    могут использовать судебные решения для госпитализации алкоголиков и наркоманов, поведение
+                    которых
+                    представляет угрозу для окружающих.</p>
+
+                <p style="margin-bottom: 16px;">Если же зависимый человек не может решиться на лечение, помогут
+                    специалисты
+                    центров по борьбе с зависимостями. Они организуют мотивационные встречи, которые проводятся на
+                    дому у
+                    пациента. Цель таких встреч – в деликатной и поддерживающей форме обсудить все плюсы предстоящей
+                    реабилитации. Мягкое внушение, детальное объяснение процесса помогут пациенту увидеть
+                    перспективы,
+                    облегчат принятие решения о начале лечения.</p>
+
+                <p style="margin-bottom: 16px;">Если зависимость достигла критической стадии, человек страдает от
+                    серьёзной
+                    <a href="https://rnd.dr-kalyuzhnaya.ru/uslugi/alkogolizm/snyatie-alkogolnoj-intoksikatsii/"
+                        style="color: var(--teal); text-decoration: underline;"><strong>алкогольной
+                            интоксикации</strong></a> или сильных симптомов абстиненции, специалисты предложат
+                    направление в
+                    стационар. Это обеспечивает медицинскую поддержку в контролируемой среде, где можно будет
+                    провести <a href="https://rnd.dr-kalyuzhnaya.ru/uslugi/alkogolizm/detoksikatsiya-pri-alkogolizme/"
+                        style="color: var(--teal); text-decoration: underline;"><strong>детоксикацию от
+                            алкоголя</strong></a>, купировать абстинентный синдром. Такие меры – первый шаг на пути
+                    к
+                    длительной реабилитации, при которой пациент получит все инструменты для восстановления,
+                    поддержания
+                    трезвости.
+                </p>
+
+                <p style="margin-bottom: 0;">Эти подходы позволяют поддержать пациента в его стремлении к
+                    выздоровлению,
+                    обеспечить безопасные условия для преодоления зависимости.</p>
+            </div>
+        </section>
+        <!-- ЭТАЖ 12: ИНТЕРВЕНЦИЯ -->
+        <section style="padding:72px 0;background:var(--gray-50)">
+            <div class="container">
+                <div class="grid-2" style="gap:48px;align-items:center">
+                    <div>
+                        <div class="section-label">Если близкий отказывается</div>
+                        <h2 class="section-title">Что делать, если человек не признаёт болезнь?</h2>
+                        <p style="font-size:16px;color:var(--gray-600);line-height:1.75;margin-bottom:20px">90%
+                            зависимых не
+                            признают
+                            свою болезнь. Принудительное лечение запрещено законом РФ — и оно не работает. Но
+                            сформировать у
+                            человека
+                            искреннее желание лечиться — можно.</p>
+                        <p style="font-size:16px;color:var(--gray-600);line-height:1.75;margin-bottom:24px">Мы применяем
+                            метод
+                            психологической интервенции. Выезд дипломированных специалистов, мягкая профессиональная
+                            беседа без
+                            давления
+                            и угроз. В <strong>92% случаев</strong> пациент соглашается на лечение в день визита.</p>
+                        <div
+                            style="background:var(--teal-light);border-radius:var(--radius);padding:16px 20px;margin-bottom:24px;border:1px solid #b0dde3">
+                            <div style="display:flex;gap:10px;align-items:flex-start">
+                                <i class="fas fa-user-secret" style="color:var(--teal);margin-top:3px"></i>
+                                <div>
+                                    <p style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px">Выезд
+                                        конфиденциален</p>
+                                    <p style="font-size:13px;color:var(--gray-600)">Специалисты приезжают в гражданской
+                                        одежде
+                                        на обычном
+                                        автомобиле. Соседи не узнают о цели визита.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-red"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                                class="fas fa-phone-alt"></i> Вызвать мотивационную группу</button>
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr;gap:14px">
+                        <div class="card" style="border-left:4px solid var(--teal)">
+                            <div style="display:flex;gap:12px;align-items:center">
+                                <i class="fas fa-check-circle"
+                                    style="color:var(--teal);font-size:20px;flex-shrink:0"></i>
+                                <div><strong style="color:var(--navy)">Без давления и угроз</strong>
+                                    <p style="font-size:13px;color:var(--gray-600);margin-top:2px">Мотивационная беседа,
+                                        а не
+                                        принуждение
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="border-left:4px solid var(--teal)">
+                            <div style="display:flex;gap:12px;align-items:center">
+                                <i class="fas fa-check-circle"
+                                    style="color:var(--teal);font-size:20px;flex-shrink:0"></i>
+                                <div><strong style="color:var(--navy)">Дипломированные специалисты</strong>
+                                    <p style="font-size:13px;color:var(--gray-600);margin-top:2px">Психологи с опытом
+                                        работы с
+                                        отрицанием
+                                        зависимости</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="border-left:4px solid var(--teal)">
+                            <div style="display:flex;gap:12px;align-items:center">
+                                <i class="fas fa-check-circle"
+                                    style="color:var(--teal);font-size:20px;flex-shrink:0"></i>
+                                <div><strong style="color:var(--navy)">92% результат</strong>
+                                    <p style="font-size:13px;color:var(--gray-600);margin-top:2px">Пациент соглашается
+                                        на
+                                        лечение в день
+                                        визита</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="border-left:4px solid var(--teal)">
+                            <div style="display:flex;gap:12px;align-items:center">
+                                <i class="fas fa-check-circle"
+                                    style="color:var(--teal);font-size:20px;flex-shrink:0"></i>
+                                <div><strong style="color:var(--navy)">Выезд 24/7</strong>
+                                    <p style="font-size:13px;color:var(--gray-600);margin-top:2px">В любое время суток,
+                                        в любой
+                                        район города
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЭТАЖ 11: УСЛОВИЯ ПРОЖИВАНИЯ -->
+        <section id="conditions" style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-label">Условия</div>
+                    <h2 class="section-title">Среда, которая помогает восстанавливаться</h2>
+                    <p class="section-desc">Домашняя атмосфера, медицинская инфраструктура и безопасное пространство без
+                        доступа
+                        к
+                        ПАВ.</p>
+                </div>
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="card-icon icon-teal"><i class="fas fa-bed"></i></div>
+                        <h3>Комфортные палаты</h3>
+                        <p>2–4-местные комнаты с кондиционером, ортопедическими матрасами и собственным санузлом.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon icon-green"><i class="fas fa-utensils"></i></div>
+                        <h3>4-разовое питание</h3>
+                        <p>Сбалансированное меню от штатного повара. По назначению врача — лечебный или гипоаллергенный
+                            стол.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon icon-sand"><i class="fas fa-dumbbell"></i></div>
+                        <h3>Спорт и активность</h3>
+                        <p>Тренажёрный зал, спортивные площадки, баня. Физическая активность — часть программы
+                            восстановления.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon icon-navy"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Безопасная среда</h3>
+                        <p>Охраняемая территория без доступа к ПАВ. Круглосуточное наблюдение медицинского персонала.
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top:24px" class="grid-3">
+                    <div class="card">
+                        <div class="card-icon icon-teal"><i class="fas fa-flask"></i></div>
+                        <h3>Медицинская инфраструктура</h3>
+                        <p>Процедурный кабинет, лаборатория, кабинеты специалистов — всё на территории центра.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon icon-navy"><i class="fas fa-tshirt"></i></div>
+                        <h3>Бытовое обслуживание</h3>
+                        <p>Регулярная смена белья, стирка личных вещей, ежедневная уборка.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon icon-sand"><i class="fas fa-file-contract"></i></div>
+                        <h3>Юридическая поддержка</h3>
+                        <p>Официальные справки, больничные листы, документы для налогового вычета 13%.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-section" style="padding: 50px 0; background: var(--white);">
+            <div class="container">
+
+                <h2 style="color: var(--navy); font-size: 26px; font-weight: 700; margin-bottom: 20px;">Подходы к
+                    реабилитации при алкогольной зависимости</h2>
+                <p style="margin-bottom: 16px;">Восстановление для людей, страдающих от алкоголизма, начинается
+                    после
+                    основных медицинских процедур – детоксикации, фармакотерапии – и проводится в закрытых
+                    учреждениях,
+                    предназначенных для постоянного пребывания.</p>
+
+                <h3 style="color: var(--navy); font-size: 18px; font-weight: 600; margin: 20px 0 10px 0;">Адаптация
+                </h3>
+                <p style="margin-bottom: 16px;">Процесс начинается со знакомства с правилами, режимом дня
+                    реабилитационного
+                    центра. Психологи, реабилитационные терапевты разрабатывают программу лечения, которая учитывает
+                    медицинскую картину, личностные особенности пациента, его привычки, предпочтения.</p>
+
+                <h3 style="color: var(--navy); font-size: 18px; font-weight: 600; margin: 20px 0 10px 0;">Интеграция
+                </h3>
+                <p style="margin-bottom: 16px;">Пациент активно участвует в терапевтических, образовательных
+                    мероприятиях,
+                    предназначенных для восстановления, развития социальных навыков, управления эмоциями,
+                    преодоления
+                    психологических проблем с зависимостью.</p>
+                <p style="margin-bottom: 16px;">Программа включает индивидуальные, групповые сессии, которые
+                    позволяют
+                    пациенту учиться у других, делиться опытом. Постоянная коррекция, дополнение плана лечения
+                    помогают
+                    адаптировать процесс реабилитации к текущим нуждам, достижениям пациента.</p>
+
+                <h3 style="color: var(--navy); font-size: 18px; font-weight: 600; margin: 20px 0 10px 0;">
+                    Социализация</h3>
+                <p style="margin-bottom: 16px;">Пациенты готовятся к возвращению в общество. Важные компоненты этапа
+                    –
+                    разработка стратегий предотвращения рецидивов, обучение умениям для поддержания трезвости.
+                    Зависимые
+                    учатся распознавать триггеры, которые могут спровоцировать срыв, разрабатывают план действий для
+                    критических ситуаций.</p>
+
+                <p style="margin-bottom: 0;">В реабилитационных центрах акцентируют внимание на медицинской
+                    поддержке,
+                    которая помогает психике адаптироваться к жизни без алкоголя, ускоряет восстановление.</p>
+            </div>
+        </section>
+        <!-- ЭТАЖ 15: ПЛП (новый блок) -->
+        <section style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="plp-block">
+                    <div>
+                        <div class="plp-label">Постлечебная программа</div>
+                        <h2 class="plp-title">ПЛП — сопровождение после выписки</h2>
+                        <p class="plp-desc">Выписка — не конец программы. Первые месяцы после возвращения домой — самый
+                            уязвимый
+                            период. Наши кураторы остаются рядом.</p>
+                        <button class="btn btn-teal"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Узнать
+                            подробнее о
+                            ПЛП</button>
+                    </div>
+                    <div class="plp-items">
+                        <div class="plp-item">
+                            <div class="plp-item-dot"><i class="fas fa-user-check"></i></div>
+                            <div class="plp-item-text">
+                                <h4>Личный куратор</h4>
+                                <p>Постоянный специалист на связи 24/7 — звонок при любом тревожном состоянии</p>
+                            </div>
+                        </div>
+                        <div class="plp-item">
+                            <div class="plp-item-dot"><i class="fas fa-calendar-check"></i></div>
+                            <div class="plp-item-text">
+                                <h4>Регулярные сессии</h4>
+                                <p>Плановые встречи с психологом для отслеживания динамики и профилактики срыва</p>
+                            </div>
+                        </div>
+                        <div class="plp-item">
+                            <div class="plp-item-dot"><i class="fas fa-briefcase"></i></div>
+                            <div class="plp-item-text">
+                                <h4>Помощь в трудоустройстве</h4>
+                                <p>Поддержка в поиске работы и адаптации к рабочей среде</p>
+                            </div>
+                        </div>
+                        <div class="plp-item">
+                            <div class="plp-item-dot"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="plp-item-text">
+                                <h4>Реагирование при угрозе срыва</h4>
+                                <p>Немедленное подключение специалиста — до того, как произошёл срыв</p>
+                            </div>
+                        </div>
+                        <div class="plp-item">
+                            <div class="plp-item-dot"><i class="fas fa-users"></i></div>
+                            <div class="plp-item-text">
+                                <h4>Продолжение семейной работы</h4>
+                                <p>Сессии с близкими для сохранения здоровой обстановки дома</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ЦЕНЫ -->
+        <section id="prices" style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-label">Стоимость</div>
+                    <h2 class="section-title">Пакетные программы реабилитации</h2>
+                    <p class="section-desc">Фиксированная стоимость без скрытых платежей. Все медикаменты, питание и
+                        работа
+                        специалистов включены.</p>
+                </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-name">Базовый курс</div>
+                        <div class="price-amount">от 3 500 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Стационарное лечение с медицинским сопровождением</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Проживание в 4-местной палате</li>
+                            <li><i class="fas fa-check"></i> 4-разовое питание</li>
+                            <li><i class="fas fa-check"></i> Медикаментозное снятие абстиненции</li>
+                            <li><i class="fas fa-check"></i> Групповые занятия по авторской программе</li>
+                            <li><i class="fas fa-check"></i> Ежедневные врачебные обходы</li>
+                            <li><i class="fas fa-check"></i> Наблюдение персонала 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Выбрать
+                            программу</button>
+                    </div>
+                    <div class="price-card featured">
+                        <div class="price-badge">Рекомендуем</div>
+                        <div class="price-name">Интенсивный курс</div>
+                        <div class="price-amount">от 5 000 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Полная авторская программа медико-социальной реабилитации</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Проживание в 2-местной палате</li>
+                            <li><i class="fas fa-check"></i> Индивидуальное меню диетолога</li>
+                            <li><i class="fas fa-check"></i> Индивидуальные сессии с психотерапевтом (2 раза в неделю)
+                            </li>
+                            <li><i class="fas fa-check"></i> Авторская программа: КПТ, гештальт, арт-терапия</li>
+                            <li><i class="fas fa-check"></i> Семейные сессии с психотерапевтом</li>
+                            <li><i class="fas fa-check"></i> Полный курс ресоциализации и ПЛП</li>
+                            <li><i class="fas fa-check"></i> Гарантия от срыва по договору</li>
+                        </ul>
+                        <button class="btn btn-teal" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Оформить
+                            курс</button>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-name">VIP-программа</div>
+                        <div class="price-amount">от 9 500 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Индивидуальный подход, максимальный комфорт и конфиденциальность</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Одноместный VIP-люкс</li>
+                            <li><i class="fas fa-check"></i> Ежедневная личная психотерапия</li>
+                            <li><i class="fas fa-check"></i> Персональный куратор 24/7</li>
+                            <li><i class="fas fa-check"></i> Полная конфиденциальность</li>
+                            <li><i class="fas fa-check"></i> Доступ к SPA и расширенной спортивной инфраструктуре</li>
+                            <li><i class="fas fa-check"></i> Долгосрочное VIP-сопровождение в рамках ПЛП</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Узнать
+                            подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section id="reviews" class="bg-gray">
+            <div class="container">
+                <div class="section-head-row">
+                    <div>
+                        <div class="section-label">Отзывы</div>
+                        <h2 class="section-title">Истории пациентов и их семей</h2>
+                        <p class="section-desc">Публикуются с разрешения. Все отзывы анонимны.</p>
+                    </div>
+                    <a href="#" class="link-more">Все отзывы <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="grid-3">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <div class="review-avatar">👤</div>
+                                <div class="review-author-info">
+                                    <h4>Аноним</h4>
+                                    <p>Краснодар, 12.02.2026</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">«После выписки жизнь изменилась. Анонимность позволила сосредоточиться на
+                            восстановлении, не беспокоясь о посторонних. Сейчас — уже больше года в ремиссии.»</p>
+                        <div class="review-footer"><i class="fas fa-check-circle"></i> Подтверждённый отзыв ·
+                            ПроДокторов
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <div class="review-avatar">👤</div>
+                                <div class="review-author-info">
+                                    <h4>Аноним</h4>
+                                    <p>Москва, 05.01.2026</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">«Искала помощь для мужа два года. Здесь наконец объяснили — это болезнь,
+                            а не
+                            слабость.
+                            Работа с семьёй изменила и меня. Мы оба изменились.»</p>
+                        <div class="review-footer"><i class="fas fa-check-circle"></i> Подтверждённый отзыв ·
+                            Яндекс.Карты
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-author">
+                                <div class="review-avatar">👤</div>
+                                <div class="review-author-info">
+                                    <h4>Наталья, мама выпускника</h4>
+                                    <p>Краснодар</p>
+                                </div>
+                            </div>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                        <p class="review-text">«Сын не употребляет уже полтора года. Врачи объяснили нам как вести себя
+                            с
+                            ним,
+                            как не
+                            срываться самим. Семейные сессии — это очень ценно. Спасибо команде.»</p>
+                        <div class="review-footer"><i class="fas fa-check-circle"></i> Подтверждённый отзыв · Google
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-label">FAQ</div>
+                    <h2 class="section-title">Часто задаваемые вопросы</h2>
+                </div>
+                <div style="max-width:800px;margin:0 auto">
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Сколько длится полный курс реабилитации? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">Полный курс занимает от 3 до 6 месяцев в зависимости от стажа зависимости,
+                            вида
+                            ПАВ и
+                            психологического состояния. Включает детоксикацию, стационарную реабилитацию и постлечебную
+                            программу. Сроки
+                            определяет врач после первичной диагностики.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Чем ваша программа отличается от обычного рехаба?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-a">Главное отличие — штатные дипломированные врачи и авторская программа
+                            медико-социальной
+                            реабилитации. В большинстве центров работают консультанты без медицинского образования по
+                            заимствованным
+                            программам. У нас — психиатр-нарколог, невролог, терапевт, клинические психологи,
+                            аддиктологи.
+                            Это
+                            медицинское учреждение с лицензией Минздрава, а не просто реабилитационный центр.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Что такое ПЛП и как это работает? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">ПЛП — постлечебная программа — это сопровождение пациента после выписки.
+                            Включает:
+                            личного
+                            куратора на связи 24/7, регулярные сессии с психологом, помощь в трудоустройстве и
+                            социализации,
+                            продолжение
+                            семейной работы. При угрозе срыва специалист подключается до того, как срыв произошёл.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Гарантируете ли вы анонимность? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">Да. Мы не передаём данные в государственные органы, не ставим на
+                            наркологический
+                            учёт
+                            и не
+                            направляем уведомлений по месту работы или учёбы. Факт обращения и пребывания в клинике
+                            знаете
+                            только вы.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Что делать, если после выписки произошёл срыв? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">Если пациент прошёл полный рекомендованный курс и выполнял предписания —
+                            повторный
+                            курс
+                            проводится бесплатно. Это официальная гарантия, зафиксированная в договоре.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Проводится ли работа с семьёй? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">Да, это обязательная часть программы. Химическая зависимость — системная
+                            болезнь,
+                            которая
+                            затрагивает всю семью. Мы проводим семейные сессии с психотерапевтом, работаем с
+                            созависимостью,
+                            обучаем
+                            правильному взаимодействию с зависимым. Работа с семьёй продолжается на этапе ПЛП.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Можно ли навещать близкого во время лечения? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">В первые 3–4 недели контакты ограничиваются — это важно для адаптации и
+                            исключения
+                            внешних
+                            триггеров. Далее посещения разрешены в установленные дни. Также проводятся совместные
+                            семейные
+                            сессии с
+                            психотерапевтом.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q" onclick="toggleFaq(this)">Входят ли лекарства и питание в стоимость? <i
+                                class="fas fa-chevron-down"></i></div>
+                        <div class="faq-a">Да. Стоимость фиксирована «под ключ»: проживание, 4-разовое питание, все
+                            медикаменты
+                            для
+                            детоксикации, работа специалистов — всё включено. Скрытых доплат нет.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЛИЦЕНЗИИ -->
+        <section style="padding:72px 0;background:var(--gray-50)">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-label">Документы</div>
+                    <h2 class="section-title">Лицензии и официальные документы</h2>
+                </div>
+                <div class="license-grid">
+                    <div>
+                        <div class="license-info">
+                            <table>
+                                <tr>
+                                    <td>Наименование</td>
+                                    <td>ООО «Айтиинвест»</td>
+                                </tr>
+                                <tr>
+                                    <td>ОГРН</td>
+                                    <td>1212300059718</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН/КПП</td>
+                                    <td>2312305298 / 231101001</td>
+                                </tr>
+                                <tr>
+                                    <td>Лицензия</td>
+                                    <td style="color:var(--teal)">№ Л041-01126-23/01066181</td>
+                                </tr>
+                                <tr>
+                                    <td>Выдана</td>
+                                    <td>19 февраля 2024 г.</td>
+                                </tr>
+                                <tr>
+                                    <td>Срок</td>
+                                    <td>Бессрочно</td>
+                                </tr>
+                                <tr>
+                                    <td>Кем выдана</td>
+                                    <td>Минздрав Краснодарского края</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank" class="btn btn-teal"
+                            style="margin-top:16px;display:inline-flex"><i class="fas fa-external-link-alt"></i>
+                            Проверить
+                            на
+                            сайте
+                            Росздравнадзора</a>
+                    </div>
+                    <div>
+                        <div class="license-scans">
+                            <div class="scan-placeholder"><i class="fas fa-file-alt"></i><span>Медицинская лицензия стр.
+                                    1</span></div>
+                            <div class="scan-placeholder"><i class="fas fa-file-pdf"></i><span>Выписка реестра стр.
+                                    2</span>
+                            </div>
+                            <div class="scan-placeholder"><i class="fas fa-building"></i><span>Свидетельство
+                                    ОГРН/ИНН</span>
+                            </div>
+                            <div class="scan-placeholder"><i class="fas fa-award"></i><span>Сертификаты
+                                    специалистов</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВОСТИ -->
+        <section style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="section-head-row">
+                    <div>
+                        <div class="section-label">Новости и статьи</div>
+                        <h2 class="section-title">Полезные материалы от врачей</h2>
+                    </div>
+                    <a href="#" class="link-more">Все статьи <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="grid-4">
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
+                                alt="КПТ"></div>
+                        <div class="news-body">
+                            <div class="news-date">08 июня 2026</div>
+                            <h3>Протоколы КПТ нового поколения в практике центра</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop"
+                                alt="Семья"></div>
+                        <div class="news-body">
+                            <div class="news-date">24 мая 2026</div>
+                            <h3>Синдром выгорания у родственников: как не потерять себя</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=600&auto=format&fit=crop"
+                                alt="Лекция"></div>
+                        <div class="news-body">
+                            <div class="news-date">12 мая 2026</div>
+                            <h3>Нейробиология срывов и методы долгосрочной ремиссии</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1584515933487-7804366f2951?q=80&w=600&auto=format&fit=crop"
+                                alt="Стационар"></div>
+                        <div class="news-body">
+                            <div class="news-date">29 апреля 2026</div>
+                            <h3>Обновление зон групповой терапии: новые стандарты</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФОРМА -->
+        <section id="consultation" style="padding:72px 0;background:var(--gray-50)">
+            <div class="container">
+                <div class="cta-block">
+                    <div>
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+                            <i class="fas fa-hand-holding-heart" style="font-size:28px;color:#7FD8E0"></i>
+                            <span
+                                style="font-size:12px;font-weight:700;background:rgba(255,255,255,0.15);padding:4px 12px;border-radius:20px;color:#fff;letter-spacing:0.5px">АНОНИМНО
+                                24/7</span>
+                        </div>
+                        <h2 class="cta-title">Нужна помощь прямо сейчас?</h2>
+                        <p class="cta-desc">Оставьте номер — специалист перезвонит в течение 15 минут. Бесплатно и
+                            анонимно.
+                        </p>
+                        <div class="cta-checks">
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Полная анонимность — без
+                                постановки
+                                на
+                                учёт</div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Штатные врачи со стажем от 9 лет
+                            </div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Лицензия Минздрава №
+                                Л041-01126-23/01066181</div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Гарантия от срыва прописана в
+                                договоре
+                            </div>
+                        </div>
+                        <div style="margin-top:28px;display:flex;align-items:center;gap:12px">
+                            <div style="display:flex;font-size:18px;color:#F59E0B">★★★★★</div>
+                            <span style="color:rgba(255,255,255,0.7);font-size:13px">4,8 · 700+ отзывов на независимых
+                                площадках</span>
+                        </div>
+                    </div>
+                    <div class="cta-form">
+                        <h3>Получить консультацию</h3>
+                        <p>Оставьте номер — мы перезвоним</p>
+                        <input type="text" class="form-input" placeholder="Ваше имя">
+                        <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__">
+                        <textarea class="form-input form-textarea"
+                            placeholder="Кратко опишите ситуацию (необязательно)"></textarea>
+                        <button class="form-submit"
+                            onclick="alert('Заявка принята. Специалист свяжется с вами в течение 15 минут.')"><i
+                                class="fas fa-phone-alt"></i> Заказать звонок</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#"
+                                style="color:var(--teal)">политикой
+                                конфиденциальности</a></p>
+                        <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--gray-400)">Или напишите
+                            напрямую:
+                        </div>
+                        <div class="form-messengers">
+                            <a href="https://wa.me/79034110003" style="background:#25D366;color:#fff"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://t.me/kdk_bot" style="background:#0088cc;color:#fff"><i
+                                    class="fab fa-telegram"></i></a>
+                            <a href="tel:+79034110003" style="background:var(--navy);color:#fff"><i
+                                    class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contacts">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3>КДК</h3>
+                        <p>Центр медико-социальной реабилитации клиники доктора Калюжной</p>
+                        <div class="license-note">
+                            <div style="font-weight:700;color:#fff;margin-bottom:4px">Лицензия Минздрава РФ</div>
+                            <div>№ Л041-01126-23/01066181 · Бессрочно</div>
+                            <div style="margin-top:6px;font-size:11px;color:rgba(255,255,255,0.5)">Штат:
+                                психиатр-нарколог,
+                                невролог,
+                                терапевт, клинический психолог, аддиктолог, диетолог</div>
+                        </div>
+                        <div class="footer-socials" style="margin-top:16px">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Направления</h4>
+                        <a href="#">Лечение алкоголизма</a>
+                        <a href="#">Лечение наркомании</a>
+                        <a href="#">Вывод из запоя</a>
+                        <a href="#">Психиатрия</a>
+                        <a href="#">Детско-подростковое</a>
+                        <a href="#">Игромания</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>О клинике</h4>
+                        <a href="#">О центре</a>
+                        <a href="#">Врачи</a>
+                        <a href="#">Программа</a>
+                        <a href="#">Лицензии</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Статьи</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Контакты</h4>
+                        <a href="tel:+79034110003" class="phone">+7 (903) 411–00–03</a>
+                        <a href="tel:+78619440003" class="phone">+7 (861) 944–00–03</a>
+                        <a href="#">info@dr-kalyuzhnaya.ru</a>
+                        <a href="#">Краснодар, ул. Алма-Атинская, 99</a>
+                        <div style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.5)">Приём обращений 24/7
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© 2026 dr-kalyuzhnaya.ru · Все права защищены</span>
+                    <div style="display:flex;gap:16px;flex-wrap:wrap">
+                        <a href="#" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px">Политика
+                            конфиденциальности</a>
+                        <a href="#"
+                            style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px">Пользовательское
+                            соглашение</a>
+                    </div>
+                </div>
+                <div style="margin-top:16px;font-size:11px;color:rgba(255,255,255,0.35);line-height:1.6">
+                    Вся информация на сайте носит информационный характер и не является публичной офертой. Имеются
+                    противопоказания,
+                    необходима консультация врача. <strong style="color:rgba(255,255,255,0.5)">18+</strong>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ВИДЖЕТ -->
+        <div class="messenger-widget">
+            <a href="https://wa.me/79034110003" class="msg-btn msg-wa" title="WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/kdk_bot" class="msg-btn msg-tg" title="Telegram"><i
+                    class="fab fa-telegram-plane"></i></a>
+            <a href="tel:+79034110003" class="msg-btn msg-call" title="Позвонить"><i class="fas fa-phone-alt"></i></a>
+        </div>
+
+        <script type="module" src="./scripts.js">
+
+        </script>
+    </body>
+
+</html>
