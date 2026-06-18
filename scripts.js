@@ -45,4 +45,42 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('testBlock').style.display = 'block';
         document.getElementById('testResult').classList.remove('active');
     }
+
+
+
+
+    // Простая фильтрация блоков (табы)
+    function filterReviews(type) {
+        document.querySelectorAll('.reviews-tab-btn').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+
+        const groups = document.querySelectorAll('.review-group-wrapper');
+        groups.forEach(group => {
+            if (type === 'all' || group.getAttribute('data-type') === type) {
+                group.style.display = 'block';
+            } else {
+                group.style.display = 'none';
+            }
+        });
+    }
+
+    function openVideoModal(url) {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('modalIframe');
+        iframe.src = url;
+        modal.classList.add('active');
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('modalIframe');
+        iframe.src = '';
+        modal.classList.remove('active');
+    }
+
+    function handleReviewSubmit(e) {
+        e.preventDefault();
+        alert('Благодарим за ваш отзыв! Он отправлен на проверку модератором сайта.');
+        document.getElementById('customReviewForm').reset();
+    }
 });
