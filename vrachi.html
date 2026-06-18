@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <title>КДК | Центр медико-социальной реабилитации клиники доктора Калюжной</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ХЕДЕР -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-inner">
+                <div class="license"><i class="fas fa-certificate"></i> Лицензия Минздрава № Л041-01126-23/01066181 — <a
+                        href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank">проверить</a></div>
+                <div style="display:flex;gap:16px;align-items:center;">
+                    <span><i class="fas fa-map-marker-alt" style="color:#6EC6FF"></i> Краснодар, ул. Алма-Атинская,
+                        99</span>
+                    <span><i class="fas fa-clock" style="color:#6EC6FF"></i> Круглосуточно 24/7</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <a href="./index.html" class="logo">
+                <div class="logo-title">КДК</div>
+                <div class="logo-sub">Центр медико-социальной реабилитации клиники доктора Калюжной</div>
+            </a>
+            <div class="header-contacts">
+                <a href="tel:+79034110003" class="header-phone">+7 (903) 411–00–03</a>
+                <div class="header-meta">
+                    <span class="anon-badge"><i class="fas fa-lock"></i> Звонок анонимен</span>
+                    <a href="https://wa.me/79034110003" style="color:var(--gray-400);text-decoration:none"><i
+                            class="fab fa-whatsapp" style="color:#25D366"></i> WhatsApp</a>
+                    <a href="https://t.me/kdk_bot" style="color:var(--gray-400);text-decoration:none"><i
+                            class="fab fa-telegram" style="color:#0088cc"></i> Telegram</a>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-red"
+                    onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                        class="fas fa-phone-alt"></i> Вызвать врача</button>
+                <button class="btn btn-teal"
+                    onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})"><i
+                        class="fas fa-comments"></i> Консультация</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="./about.html">О центре</a>
+                <a href="./vnutr.html">Направления</a>
+                <a href="./vrachi.html">Врачи</a>
+                <a href="#program">Программа</a>
+                <a href="#family">Семье</a>
+                <a href="#conditions">Условия</a>
+                <a href="#prices">Цены</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+                <a href="./contact.html">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <section class="team-section">
+            <div class="team-container">
+                <div class="team-header">
+                    <h1 class="section-title">Специалисты нашего центра</h1>
+                    <p class="team-subtitle">Команда квалифицированных врачей, клинических психологов и аддиктологов с
+                        многолетним опытом возвращения к здоровой жизни.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600"
+                                alt="Калюжная Лариса Петровна" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-badge">Руководство</span>
+                            <h3 class="team-name">Калюжная Лариса Петровна</h3>
+                            <p class="team-position">Главный врач, психиатр-нарколог, психотерапевт</p>
+
+                            <div class="team-meta">
+                                <span class="team-experience">Стаж: более 20 лет</span>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-val">5.0</span>
+                                    <span class="rating-count">(48 отзывов)</span>
+                                </div>
+                            </div>
+
+                            <div class="team-bio">
+                                Эксперт в области лечения комплексных аддикций и реабилитации. Автор индивидуальных
+                                терапедических программ центра.
+                            </div>
+                            <a href="./vrach-otdelnij.html" class="btn-team" style="margin-bottom: 5px;">Подробнее</a>
+                            <a href="#callback" class="btn-team">Записаться на прием</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600"
+                                alt="Алексеев Игорь Владимирович" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-badge">Психотерапия</span>
+                            <h3 class="team-name">Алексеев Игорь Владимирович</h3>
+                            <p class="team-position">Ведущий клинический психолог, семейный терапевт</p>
+
+                            <div class="team-meta">
+                                <span class="team-experience">Стаж: 12 лет</span>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-val">4.9</span>
+                                    <span class="rating-count">(32 отзыва)</span>
+                                </div>
+                            </div>
+
+                            <div class="team-bio">
+                                Специализируется на когнитивно-поведенческой терапии (КПТ) и преодолении кризисных
+                                состояний у
+                                резидентов и их семей.
+                            </div>
+                            <a href="./vrach-otdelnij.html" class="btn-team" style="margin-bottom: 5px;">Подробнее</a>
+                            <a href="#callback" class="btn-team">Записаться на прием</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1594824813573-246434e33963?auto=format&fit=crop&q=80&w=600"
+                                alt="Смирнова Елена Анатольевна" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-badge">Реабилитация</span>
+                            <h3 class="team-name">Смирнова Елена Анатольевна</h3>
+                            <p class="team-position">Врач-психотерапевт, специалист по аддиктологии</p>
+
+                            <div class="team-meta">
+                                <span class="team-experience">Стаж: 15 лет</span>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-val">4.9</span>
+                                    <span class="rating-count">(27 отзывов)</span>
+                                </div>
+                            </div>
+
+                            <div class="team-bio">
+                                Ведет групповую и индивидуальную терапию в стационаре, помогает преодолевать
+                                психологическое
+                                сопротивление на этапе адаптации.
+                            </div>
+                            <a href="./vrach-otdelnij.html" class="btn-team" style="margin-bottom: 5px;">Подробнее</a>
+                            <a href="#callback" class="btn-team">Записаться на прием</a>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=600"
+                                alt="Петров Денис Николаевич" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <span class="team-badge">Консультация</span>
+                            <h3 class="team-name">Петров Денис Николаевич</h3>
+                            <p class="team-position">Врач психиатр-нарколог, специалист по детоксикации</p>
+
+                            <div class="team-meta">
+                                <span class="team-experience">Стаж: 9 лет</span>
+                                <div class="team-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span class="rating-val">4.8</span>
+                                    <span class="rating-count">(19 отзывов)</span>
+                                </div>
+                            </div>
+
+                            <div class="team-bio">
+                                Отвечает за медикаментозное сопровождение, оценку соматического статуса пациентов при
+                                поступлении в стационар.
+                            </div>
+                            <a href="./vrach-otdelnij.html" class="btn-team" style="margin-bottom: 5px;">Подробнее</a>
+                            <a href="#callback" class="btn-team">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ФОРМА -->
+        <section id="consultation" style="padding:72px 0;background:var(--gray-50)">
+            <div class="container">
+                <div class="cta-block">
+                    <div>
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+                            <i class="fas fa-hand-holding-heart" style="font-size:28px;color:#7FD8E0"></i>
+                            <span
+                                style="font-size:12px;font-weight:700;background:rgba(255,255,255,0.15);padding:4px 12px;border-radius:20px;color:#fff;letter-spacing:0.5px">АНОНИМНО
+                                24/7</span>
+                        </div>
+                        <h2 class="cta-title">Нужна помощь прямо сейчас?</h2>
+                        <p class="cta-desc">Оставьте номер — специалист перезвонит в течение 15 минут. Бесплатно и
+                            анонимно.
+                        </p>
+                        <div class="cta-checks">
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Полная анонимность — без
+                                постановки
+                                на
+                                учёт</div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Штатные врачи со стажем от 9 лет
+                            </div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Лицензия Минздрава №
+                                Л041-01126-23/01066181</div>
+                            <div class="cta-check"><i class="fas fa-check-circle"></i> Гарантия от срыва прописана в
+                                договоре
+                            </div>
+                        </div>
+                        <div style="margin-top:28px;display:flex;align-items:center;gap:12px">
+                            <div style="display:flex;font-size:18px;color:#F59E0B">★★★★★</div>
+                            <span style="color:rgba(255,255,255,0.7);font-size:13px">4,8 · 700+ отзывов на независимых
+                                площадках</span>
+                        </div>
+                    </div>
+                    <div class="cta-form">
+                        <h3>Получить консультацию</h3>
+                        <p>Оставьте номер — мы перезвоним</p>
+                        <input type="text" class="form-input" placeholder="Ваше имя">
+                        <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__">
+                        <textarea class="form-input form-textarea"
+                            placeholder="Кратко опишите ситуацию (необязательно)"></textarea>
+                        <button class="form-submit"
+                            onclick="alert('Заявка принята. Специалист свяжется с вами в течение 15 минут.')"><i
+                                class="fas fa-phone-alt"></i> Заказать звонок</button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#"
+                                style="color:var(--teal)">политикой
+                                конфиденциальности</a></p>
+                        <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--gray-400)">Или напишите
+                            напрямую:
+                        </div>
+                        <div class="form-messengers">
+                            <a href="https://wa.me/79034110003" style="background:#25D366;color:#fff"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://t.me/kdk_bot" style="background:#0088cc;color:#fff"><i
+                                    class="fab fa-telegram"></i></a>
+                            <a href="tel:+79034110003" style="background:var(--navy);color:#fff"><i
+                                    class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="contacts">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h3>КДК</h3>
+                        <p>Центр медико-социальной реабилитации клиники доктора Калюжной</p>
+                        <div class="license-note">
+                            <div style="font-weight:700;color:#fff;margin-bottom:4px">Лицензия Минздрава РФ</div>
+                            <div>№ Л041-01126-23/01066181 · Бессрочно</div>
+                            <div style="margin-top:6px;font-size:11px;color:rgba(255,255,255,0.5)">Штат:
+                                психиатр-нарколог,
+                                невролог,
+                                терапевт, клинический психолог, аддиктолог, диетолог</div>
+                        </div>
+                        <div class="footer-socials" style="margin-top:16px">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Направления</h4>
+                        <a href="#">Лечение алкоголизма</a>
+                        <a href="#">Лечение наркомании</a>
+                        <a href="#">Вывод из запоя</a>
+                        <a href="#">Психиатрия</a>
+                        <a href="#">Детско-подростковое</a>
+                        <a href="#">Игромания</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>О клинике</h4>
+                        <a href="#">О центре</a>
+                        <a href="#">Врачи</a>
+                        <a href="#">Программа</a>
+                        <a href="#">Лицензии</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Статьи</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Контакты</h4>
+                        <a href="tel:+79034110003" class="phone">+7 (903) 411–00–03</a>
+                        <a href="tel:+78619440003" class="phone">+7 (861) 944–00–03</a>
+                        <a href="#">info@dr-kalyuzhnaya.ru</a>
+                        <a href="#">Краснодар, ул. Алма-Атинская, 99</a>
+                        <div style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.5)">Приём обращений 24/7
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span>© 2026 dr-kalyuzhnaya.ru · Все права защищены</span>
+                    <div style="display:flex;gap:16px;flex-wrap:wrap">
+                        <a href="#" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px">Политика
+                            конфиденциальности</a>
+                        <a href="#"
+                            style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px">Пользовательское
+                            соглашение</a>
+                    </div>
+                </div>
+                <div style="margin-top:16px;font-size:11px;color:rgba(255,255,255,0.35);line-height:1.6">
+                    Вся информация на сайте носит информационный характер и не является публичной офертой. Имеются
+                    противопоказания,
+                    необходима консультация врача. <strong style="color:rgba(255,255,255,0.5)">18+</strong>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ВИДЖЕТ -->
+        <div class="messenger-widget">
+            <a href="https://wa.me/79034110003" class="msg-btn msg-wa" title="WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/kdk_bot" class="msg-btn msg-tg" title="Telegram"><i
+                    class="fab fa-telegram-plane"></i></a>
+            <a href="tel:+79034110003" class="msg-btn msg-call" title="Позвонить"><i class="fas fa-phone-alt"></i></a>
+        </div>
+
+        <script type="module" src="./scripts.js">
+
+        </script>
+    </body>
+
+</html>

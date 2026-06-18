@@ -2221,97 +2221,1895 @@ footer {
     margin: 0;
 }
 
-@media (max-width: 900px) {
-    .hero-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-card {
-        display: none;
-    }
-
-    .grid-2,
-    .grid-3,
-    .grid-4,
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .family-block,
-    .youth-block,
-    .plp-block,
-    .appeal-block,
-    .cta-block,
-    .license-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .price-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .vs-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .compare-table {
-        font-size: 12px;
-    }
+/* ==========================================================================
+   PRICES SECTION
+   ========================================================================== */
+.prices-section {
+    padding: 80px 0;
+    background-color: var(--gray-50);
 }
 
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 30px;
-    }
+.prices-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    .section-title {
-        font-size: 26px;
-    }
+/* Обертка для скролла на средних экранах */
+.price-table-wrapper {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
 
-    .grid-2,
-    .grid-3,
-    .grid-4,
-    .stats-grid,
-    .youth-cards {
-        grid-template-columns: 1fr;
-    }
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+    color: var(--gray-800);
+}
 
-    .trust-bar-inner {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+/* Шапка таблицы */
+.price-table th {
+    background-color: var(--navy);
+    color: var(--white);
+    font-weight: 600;
+    padding: 18px 24px;
+    letter-spacing: 0.3px;
+}
 
-    .trust-item {
-        border-right: none;
-        padding: 4px 0;
-    }
+.price-table th:last-child {
+    text-align: center;
+}
 
-    .header-main {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+/* Строки и ячейки */
+.price-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--gray-200);
+    vertical-align: middle;
+    line-height: 1.5;
+}
 
-    .nav-inner {
-        overflow-x: auto;
-    }
+/* Разделительные категории */
+.price-table tr.table-category td {
+    background-color: var(--teal-light);
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 24px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(46, 125, 135, 0.15);
+}
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
+/* Эффект наведения на строки (кроме категорий) */
+.price-table tbody tr:not(.table-category):hover {
+    background-color: rgba(232, 244, 246, 0.3);
+    /* легкий налет цвета teal-light */
+}
 
-    .plp-block {
-        padding: 28px;
-    }
+/* Стилизация цены */
+.price-value {
+    font-weight: 700;
+    color: var(--navy);
+    white-space: nowrap;
+}
 
-    .cta-block {
-        padding: 28px;
-    }
+/* Кнопка в таблице */
+.btn-price {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: var(--teal);
+    border: 1px solid var(--teal);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
 
-    .test-block {
-        padding: 28px;
-    }
+.btn-price:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(46, 125, 135, 0.2);
+}
+
+/* Подпись под таблицей */
+.price-note {
+    font-size: 13px;
+    color: var(--gray-400);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ==========================================================================
+   TEAM SECTION (ВРАЧИ)
+   ========================================================================== */
+.team-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+.team-subtitle {
+    font-size: 16px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-top: 16px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.team-card {
+    display: flex;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26, 53, 87, 0.12);
+}
+
+.team-img-wrapper {
+    flex: 0 0 220px;
+    position: relative;
+    background-color: var(--sand-light);
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.team-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.team-badge {
+    align-self: flex-start;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: var(--teal-light);
+    color: var(--teal);
+    margin-bottom: 14px;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.team-position {
+    font-size: 14px;
+    color: var(--gray-800);
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* Новая строка-контейнер для стажа и отзывов */
+.team-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed var(--gray-200);
+    padding-bottom: 12px;
+}
+
+.team-experience {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+/* Блок рейтинга */
+.team-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.team-rating .fa-star {
+    color: #F1C40F;
+    /* Благородный золотой цвет для звездочки */
+    font-size: 12px;
+}
+
+.rating-val {
+    font-weight: 700;
+    color: var(--gray-800);
+}
+
+.rating-count {
+    color: var(--gray-400);
+}
+
+.team-bio {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.btn-team {
+    display: block;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: transparent;
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-team:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+/* ==========================================================================
+   DOCTOR PERSONAL PAGE
+   ========================================================================== */
+.doctor-page-section {
+    padding: 40px 0 80px 0;
+    background-color: var(--white);
+}
+
+.doctor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Хлебные крошки */
+.doctor-breadcrumbs {
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-bottom: 32px;
+}
+
+.doctor-breadcrumbs a {
+    color: var(--gray-600);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.doctor-breadcrumbs a:hover {
+    color: var(--teal);
+}
+
+/* Лейаут */
+.doctor-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+/* Левая боковая панель */
+.doctor-card-sticky {
+    position: sticky;
+    top: 20px;
+    /* прилипает при скролле, если шапка не фиксированная */
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.doctor-photo-box {
+    width: 100%;
+    height: 340px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 16px;
+    background-color: var(--sand-light);
+}
+
+.doctor-main-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.doctor-status-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal);
+    background-color: var(--teal-light);
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 24px;
+}
+
+/* Быстрая инфо-панель */
+.doctor-quick-meta {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-100);
+    border-bottom: 1px solid var(--gray-100);
+    padding: 16px 0;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+.quick-meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.meta-label {
+    font-size: 11px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.meta-value {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.meta-value.text-gold {
+    color: #F1C40F;
+}
+
+.link-to-reviews {
+    color: var(--navy);
+    text-decoration: underline;
+}
+
+.link-to-reviews:hover {
+    color: var(--teal);
+}
+
+/* Кнопка заказа */
+.btn-doctor-order {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--teal);
+    color: var(--white);
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 14px rgba(46, 125, 135, 0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-doctor-order:hover {
+    background-color: var(--navy);
+    box-shadow: 0 4px 14px rgba(26, 53, 87, 0.25);
+}
+
+.doctor-order-notice {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* Правая контентная область */
+.doctor-main-header {
+    margin-bottom: 40px;
+}
+
+.doctor-spec-tag {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--teal);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.doctor-title-name {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.doctor-lead-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--gray-800);
+}
+
+/* Блоки с контентом */
+.doctor-info-block {
+    margin-bottom: 48px;
+}
+
+.doctor-info-block .block-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doctor-info-block .block-title i {
+    color: var(--teal);
+    font-size: 18px;
+}
+
+/* Списки */
+.doctor-list {
+    list-style: none;
+    padding: 0;
+}
+
+.doctor-list li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--gray-600);
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.doctor-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: bold;
+}
+
+/* Временная шкала образования */
+.timeline-edu {
+    border-left: 2px solid var(--gray-100);
+    padding-left: 24px;
+    margin-left: 8px;
+}
+
+.edu-item {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+
+.edu-item::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--teal);
+    border: 2px solid var(--white);
+}
+
+.edu-year {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.edu-desc strong {
+    font-size: 15px;
+    color: var(--navy);
+    display: block;
+    line-height: 1.4;
+}
+
+.edu-desc p {
+    font-size: 14px;
+    color: var(--gray-600);
+    margin-top: 4px;
+}
+
+/* Цитата доктора */
+.doctor-quote {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--gray-800);
+    background-color: var(--gray-50);
+    padding: 24px;
+    border-radius: var(--radius);
+    border-left: 4px solid var(--navy);
+    margin: 0;
+}
+
+/* Блок отзывов */
+.mini-review {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.review-author {
+    color: var(--navy);
+}
+
+.review-date {
+    color: var(--gray-400);
+    font-size: 12px;
+}
+
+.review-stars {
+    color: #F1C40F;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gray-600);
+}
+
+/* ==========================================================================
+   УНИВЕРСАЛЬНАЯ СТИЛИЗАЦИЯ ДЛЯ ОБОИХ СЛАЙДЕРОВ
+   ========================================================================== */
+.universal-slider {
+    position: relative;
+    width: 100%;
+    padding: 10px 4px;
+}
+
+.slider-viewport {
+    width: 100%;
+    overflow: hidden;
+    /* Прячем все, что не помещается */
+}
+
+.slider-track {
+    display: flex;
+    gap: 20px;
+    /* Отступ между карточками */
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+/* Расчет ширины: на десктопе показываем 2 карточки одновременно */
+.universal-slider .slider-item {
+    flex: 0 0 calc((100% - 20px) / 2);
+    width: calc((100% - 20px) / 2);
+    box-sizing: border-box;
+}
+
+/* Специфичные настройки высоты элементов внутри слайдера для выравнивания */
+.universal-slider .mini-review,
+.universal-slider .license-doc-item {
+    margin: 0;
+    height: 100%;
+    /* Карточки будут одинаковой высоты */
+    display: flex;
+    flex-direction: column;
+}
+
+.universal-slider .license-doc-item {
+    flex-direction: row;
+    /* Для лицензий сохраняем горизонтальный вид иконка+текст */
+    background: var(--gray-50);
+}
+
+/* Кнопки навигации — выносим чуть за пределы вьюпорта для "воздушности" */
+.universal-slider .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.universal-slider .slider-btn:hover {
+    background: var(--teal);
+    color: var(--white);
+    border-color: var(--teal);
+}
+
+.universal-slider .btn-prev {
+    left: -16px;
+}
+
+.universal-slider .btn-next {
+    right: -16px;
+}
+
+/* При отключении кнопок (например, в начале/конце списка) */
+.universal-slider .slider-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: var(--gray-50);
+    color: var(--gray-400);
+    border-color: var(--gray-200);
+}
+
+/* Пагинация (точки) */
+.universal-slider .slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.universal-slider .slider-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gray-200);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.universal-slider .slider-dot.active {
+    background: var(--teal);
+    width: 18px;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   ОБНОВЛЕННЫЕ КАРТОЧКИ ЛИЦЕНЗИЙ С КАРТИНКАМИ-ЗАГЛУШКАМИ
+   ========================================================================== */
+.license-doc-item.has-preview {
+    display: flex;
+    flex-direction: column;
+    /* Меняем направление на вертикальное */
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    /* Убираем внутренний отступ, чтобы картинка прилегала к краям */
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.license-doc-item.has-preview:hover {
+    border-color: var(--teal);
+    box-shadow: 0 8px 24px rgba(46, 125, 135, 0.12);
+    transform: translateY(-4px);
+    /* Теперь карточка приподнимается вверх */
+}
+
+/* Окно превью-заглушки (имитация документа) */
+.license-preview-img {
+    width: 100%;
+    height: 160px;
+    /* Фиксированная высота для аккуратной сетки */
+    background-color: var(--sand-light);
+    border-bottom: 1px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--gray-400);
+    position: relative;
+    overflow: hidden;
+}
+
+.license-preview-img i {
+    font-size: 28px;
+    color: var(--gray-400);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.license-preview-img span {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Эффект приближения виртуального бланка при наведении */
+.license-doc-item.has-preview:hover .license-preview-img i {
+    transform: scale(1.15);
+    color: var(--teal);
+}
+
+/* Нижняя текстовая плашка внутри карточки */
+.license-meta-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: var(--white);
+    flex-grow: 1;
+}
+
+.license-doc-item.has-preview .license-icon-box {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    background: var(--teal-light);
+    color: var(--teal);
+    border: none;
+    border-radius: 8px;
+}
+
+.license-doc-item.has-preview .license-doc-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
+.license-doc-item.has-preview .license-doc-meta {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+/* Если вместо иконки и текста вы решите вставить реальные изображения документов, 
+   достаточно будет прописать этот класс для тега img внутри .license-preview-img */
+.license-preview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* ==========================================================================
+   ВНЕШНИЕ РЕЙТИНГИ НА ПЛОЩАДКАХ (ЯНДЕКС, ПРОДОКТОРОВ)
+   ========================================================================== */
+.doctor-external-ratings {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px dashed var(--gray-200);
+    text-align: left;
+    /* Перебиваем центрирование родительского сайдбара */
+}
+
+.ext-ratings-title {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gray-400);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.specialist__platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Отступы между плитками */
+}
+
+/* Стили для узкой интерактивной плитки-ссылки */
+.platform-rating-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    /* Поддерживаем закругления проекта */
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.platform-rating-badge:hover {
+    border-color: var(--teal);
+    background-color: var(--gray-50);
+    box-shadow: 0 4px 12px rgba(46, 125, 135, 0.06);
+    transform: translateX(4px);
+    /* Легкий сдвиг вправо при наведении */
+}
+
+/* Обертка для логотипа, чтобы контролировать размеры картинок */
+.platform-logo-box {
+    display: flex;
+    align-items: center;
+    max-width: 110px;
+    height: 24px;
+}
+
+.platform-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Блок с оценкой и звездочкой */
+.platform-stars-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gray-50);
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--gray-100);
+    transition: background-color 0.25s ease;
+}
+
+.platform-rating-badge:hover .platform-stars-box {
+    background: var(--white);
+    border-color: rgba(46, 125, 135, 0.2);
+}
+
+.platform-score {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gray-800);
+}
+
+.platform-stars-box .fa-star {
+    color: #F1C40F;
+    /* Золотая звездочка */
+    font-size: 11px;
+}
+
+
+
+.doctor-card-sticky {
+    position: sticky;
+    top: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    text-align: center;
+
+    /* Добавляем защиту: если сайдбар длиннее экрана, он будет аккуратно 
+       прокручиваться внутри себя, а не улетать и не прятать нижние плашки */
+    overflow-y: auto;
+}
+
+/* Скрываем стандартный некрасивый скроллбар внутри липкого блока для эстетики */
+.doctor-card-sticky::-webkit-scrollbar {
+    width: 4px;
+}
+
+.doctor-card-sticky::-webkit-scrollbar-thumb {
+    background: var(--gray-200);
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   ОБНОВЛЕННАЯ СТРУКТУРА СТРАНИЦЫ «О ЦЕНТРЕ» (СТРУКТУРИРОВАНИЕ ТЕКСТА)
+   ========================================================================== */
+
+/* Общие вспомогательные стили для разметки секций */
+.site-main-content section {
+    padding: 80px 0;
+    /* Комфортные вертикальные отступы между блоками */
+}
+
+.section-title-wrapper {
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.section-title-wrapper.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-tagline {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--teal);
+    margin-bottom: 8px;
+    background: var(--teal-light);
+    padding: 4px 12px;
+    border-radius: 30px;
+}
+
+.block-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.25;
+}
+
+.block-main-title span {
+    color: var(--teal);
+}
+
+.section-intro-text {
+    font-size: 16px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+.section-intro-text.centered {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 1. Секция Hero */
+.about-hero-banner {
+    background: var(--white);
+    padding-bottom: 40px !important;
+}
+
+.about-intro-accent-box {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-top: 32px;
+}
+
+.intro-lead-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--navy);
+    font-weight: 500;
+}
+
+.intro-divider {
+    height: 1px;
+    background: var(--gray-200);
+    margin: 24px 0;
+}
+
+.about-intro-accent-box p:not(.intro-lead-text) {
+    font-size: 15px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.about-intro-accent-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* 2. Секция преимуществ (Плитка) */
+.about-advantages-section {
+    background: var(--sand-light);
+}
+
+.advantages-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.advantage-medical-card {
+    background: var(--white);
+    border: 1px solid rgba(26, 53, 87, 0.04);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.advantage-medical-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--teal);
+}
+
+.adv-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.adv-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background: var(--teal-light);
+    color: var(--teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.adv-card-num {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgba(26, 53, 87, 0.08);
+}
+
+.advantage-medical-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.advantage-medical-card p {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* 3. Секция Модели (Таймлайн / Шаги) */
+.about-model-section {
+    background: var(--white);
+}
+
+.model-timeline-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.timeline-step-item {
+    display: flex;
+    align-items: stretch;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.step-badge-number {
+    background: var(--navy);
+    color: var(--white);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.timeline-step-item:nth-child(even) .step-badge-number {
+    background: var(--teal);
+}
+
+.step-content-inner {
+    padding: 24px 32px;
+}
+
+.step-content-inner h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.step-content-inner p {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+/* 4. Секция Семьи и ПЛП */
+.about-family-section {
+    background: var(--sand-light);
+}
+
+.family-dual-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.family-feature-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-accent-line {
+    height: 6px;
+    background: #D4AC0D;
+    /* Теплый золотистый оттенок для блока семьи */
+}
+
+.card-accent-line.line-teal {
+    background: var(--teal);
+}
+
+.card-body-text {
+    padding: 32px;
+}
+
+.card-body-text h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 14px;
+}
+
+.card-body-text p {
+    font-size: 14.5px;
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* 5. Подростковое отделение */
+.about-youth-section {
+    background: var(--white);
+}
+
+.youth-department-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.youth-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+}
+
+.youth-card-icon {
+    font-size: 32px;
+    color: var(--teal);
+    margin-bottom: 16px;
+}
+
+.youth-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.youth-card p {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* 6. Блок Гарантий и финального CTA */
+.about-security-section {
+    background: var(--sand-light);
+}
+
+.security-inner-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    color: var(--white);
+    box-shadow: 0 12px 40px rgba(26, 53, 87, 0.15);
+}
+
+.security-text-content p {
+    color: rgba(250, 250, 248, 0.75);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.security-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.security-title span {
+    color: var(--sand);
+}
+
+.security-badges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.security-badge-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.security-badge-item i {
+    font-size: 24px;
+    color: var(--sand);
+    margin-top: 4px;
+}
+
+.badge-text-box h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.badge-text-box p {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: rgba(250, 250, 248, 0.7);
+    margin: 0;
+}
+
+/* Конвертящая плашка внутри баннера */
+.security-cta-plate {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.security-cta-plate h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--white);
+}
+
+.security-cta-plate h3 span {
+    color: var(--sand);
+}
+
+.cta-subtitle {
+    font-size: 16px;
+    color: var(--sand);
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.cta-desc {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(250, 250, 248, 0.65);
+    margin: 16px 0 24px 0;
+}
+
+.cta-phone-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--teal);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.cta-phone-btn:hover {
+    background: #24646c;
+}
+
+
+/* ==========================================================================
+   СТРАНИЦА КОНТАКТОВ: СТИЛИЗАЦИЯ И СЕТКИ
+   ========================================================================== */
+
+/* Вспомогательные классы для общих оберток */
+.contacts-hero-section {
+    background: var(--white);
+    padding: 60px 0 20px 0 !important;
+}
+
+.contacts-header {
+    max-width: 800px;
+}
+
+.contacts-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.contacts-title span {
+    color: var(--teal);
+}
+
+.contacts-subtitle {
+    font-size: 16px;
+    color: var(--gray-600);
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* Сетка страницы контактов */
+.contacts-main-block {
+    background: var(--white);
+    padding-top: 20px !important;
+    padding-bottom: 60px !important;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Левая колонка: карточки и карта */
+.contacts-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.contact-item-card {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.contact-item-card__icon {
+    font-size: 20px;
+    color: var(--teal);
+    background: var(--teal-light);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item-card__content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.contact-item-card__content p {
+    font-size: 14px;
+    color: var(--gray-800);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.contact-item-card__content p a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item-card__content p a:hover {
+    color: var(--teal);
+}
+
+.contact-item-card__sub {
+    display: block;
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-top: 4px;
+}
+
+/* Обертка карты */
+.contacts-map-wrapper {
+    background: var(--white);
+}
+
+.contacts-map-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacts-map-container {
+    height: 350px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--gray-100);
+    box-shadow: var(--shadow);
+    background: var(--gray-50);
+}
+
+.contacts-map-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--gray-600);
+    margin-top: 16px;
+}
+
+/* Правая колонка: Форма связи */
+.feedback-card-contact {
+    background: var(--sand-light);
+    border: 1px solid rgba(26, 53, 87, 0.03);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow);
+}
+
+.feedback-card__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.feedback-card__subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gray-600);
+    margin-bottom: 24px;
+}
+
+/* Стили элементов формы */
+.feedback-form__group {
+    margin-bottom: 16px;
+}
+
+.feedback-form__label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 14.5px;
+    color: var(--gray-800);
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-form__input:focus,
+.feedback-form__textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    box-shadow: 0 0 0 3px var(--teal-light);
+}
+
+.feedback-form__checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.feedback-form__checkbox {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--teal);
+    flex-shrink: 0;
+}
+
+.feedback-form__checkbox-label {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--gray-600);
+}
+
+.feedback-form__checkbox-label a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+.feedback-form__submit-btn {
+    width: 100%;
+    background: var(--teal);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.feedback-form__submit-btn:hover {
+    background: #24646c;
+}
+
+/* Успешная отправка */
+.feedback-success-msg {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.feedback-success-msg__icon {
+    width: 56px;
+    height: 56px;
+    background: var(--teal-light);
+    color: var(--teal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin: 0 auto 16px auto;
+}
+
+.feedback-success-msg h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.feedback-success-msg p {
+    font-size: 14px;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+/* Блок мессенджеров под формой */
+.contacts-direct-messengers {
+    margin-top: 28px;
+    border-top: 1px solid var(--gray-200);
+    padding-top: 20px;
+}
+
+.messengers-label {
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.form-messengers {
+    display: flex;
+    gap: 12px;
+}
+
+.ms-link {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 600;
+    transition: opacity 0.2s ease;
+}
+
+.ms-link:hover {
+    opacity: 0.9;
+}
+
+.wa-bg {
+    background: #25D366;
+}
+
+.tg-bg {
+    background: #0088cc;
+}
+
+
+/* ==========================================================================
+   СЕКЦИЯ С ПЛАТФОРМАМИ И ОТЗЫВАМИ (БЛОК ДОВЕРИЯ)
+   ========================================================================== */
+.contacts-ratings-section {
+    background: var(--sand-light);
+}
+
+.ratings-block-header {
+    margin-bottom: 32px;
+}
+
+.specialist__platforms {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.platform-rating-badge {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(26, 53, 87, 0.03);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.platform-rating-badge:hover {
+    transform: translateY(-3px);
+    border-color: var(--teal);
+    box-shadow: var(--shadow);
+}
+
+.platform-logo-box {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-logo-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(10%);
+}
+
+.platform-stars-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gray-50);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--gray-100);
+}
+
+.platform-score {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.platform-stars-box i {
+    font-size: 11px;
+    color: #F59E0B;
+}
+
+
+/* ==========================================================================
+   СТИЛИ ДЛЯ СЕКЦИИ СТА (СТРУКТУРИРОВАНИЕ ТЕКСТА КЛИЕНТА)
+   ========================================================================== */
+.contacts-cta-section {
+    background: var(--white);
+}
+
+.contacts-cta-section .cta-block {
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 12px 32px rgba(26, 53, 87, 0.15);
+}
+
+.cta-badge-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.cta-badge-wrapper i {
+    font-size: 24px;
+    color: #7FD8E0;
+}
+
+.cta-badge-text {
+    font-size: 11px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: var(--white);
+    letter-spacing: 0.8px;
+}
+
+.cta-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+.cta-desc {
+    font-size: 15px;
+    color: rgba(250, 250, 248, 0.8);
+    margin-top: 12px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.cta-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cta-check {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(250, 250, 248, 0.9);
+}
+
+.cta-check i {
+    color: #7FD8E0;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.cta-trust-line {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+}
+
+.cta-stars {
+    font-size: 16px;
+    color: #F59E0B;
+    letter-spacing: 1px;
+}
+
+.cta-trust-text {
+    color: rgba(250, 250, 248, 0.65);
+    font-size: 12.5px;
+}
+
+/* Правая микро-плашка внутри CTA */
+.cta-form-right-mini {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+}
+
+.cta-form-right-mini h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.cta-form-right-mini p {
+    font-size: 13px;
+    color: var(--sand);
+    margin-bottom: 20px;
+}
+
+.cta-btn-phone-big {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--teal);
+    color: var(--white);
+    text-decoration: none;
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn-phone-big:hover {
+    background: #24646c;
 }

@@ -53,16 +53,16 @@
         </div>
         <nav class="nav">
             <div class="nav-inner">
-                <a href="#about">О центре</a>
+                <a href="./about.html">О центре</a>
                 <a href="./vnutr.html">Направления</a>
-                <a href="#doctors">Врачи</a>
+                <a href="./vrachi.html">Врачи</a>
                 <a href="#program">Программа</a>
                 <a href="#family">Семье</a>
                 <a href="#conditions">Условия</a>
                 <a href="#prices">Цены</a>
                 <a href="#reviews">Отзывы</a>
                 <a href="#faq">FAQ</a>
-                <a href="#contacts">Контакты</a>
+                <a href="./contact.html">Контакты</a>
             </div>
         </nav>
     </header>
@@ -174,82 +174,145 @@
 
 
 
-
-
-
-
-
-
-        <!-- ЭТАЖ 5: ВРАЧИ -->
-        <section id="doctors">
+        <section id="prices" style="padding:72px 0;background:#fff">
             <div class="container">
-                <div class="section-head-row">
-                    <div>
-                        <div class="section-label">Специалисты</div>
-                        <h2 class="section-title">Врачи, которые работают у нас в штате</h2>
-                        <p class="section-desc">Не приглашённые специалисты — постоянная команда с дипломами и
-                            подтверждённым
-                            стажем.
-                        </p>
-                    </div>
-                    <a href="#" class="link-more">Все врачи <i class="fas fa-arrow-right"></i></a>
+                <div class="section-head">
+                    <div class="section-label">Стоимость</div>
+                    <h2 class="section-title">Пакетные программы реабилитации</h2>
+                    <p class="section-desc">Фиксированная стоимость без скрытых платежей. Все медикаменты, питание и
+                        работа
+                        специалистов включены.</p>
                 </div>
-                <div class="grid-3">
-                    <div class="doctor-card">
-                        <div class="doctor-photo"><span>👩‍⚕️</span><span class="doctor-badge">Главный врач</span></div>
-                        <div class="doctor-body">
-                            <h3>Калюжная Марина Александровна</h3>
-                            <div class="doctor-spec">Психиатр-нарколог, психотерапевт</div>
-                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 17
-                                лет</div>
-                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,8</strong> <a
-                                    href="#">47
-                                    отзывов</a>
-                            </div>
-                            <button class="btn btn-outline"
-                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
-                        </div>
+                <div class="price-cards">
+                    <div class="price-card">
+                        <div class="price-name">Базовый курс</div>
+                        <div class="price-amount">от 3 500 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Стационарное лечение с медицинским сопровождением</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Проживание в 4-местной палате</li>
+                            <li><i class="fas fa-check"></i> 4-разовое питание</li>
+                            <li><i class="fas fa-check"></i> Медикаментозное снятие абстиненции</li>
+                            <li><i class="fas fa-check"></i> Групповые занятия по авторской программе</li>
+                            <li><i class="fas fa-check"></i> Ежедневные врачебные обходы</li>
+                            <li><i class="fas fa-check"></i> Наблюдение персонала 24/7</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Выбрать
+                            программу</button>
                     </div>
-                    <div class="doctor-card">
-                        <div class="doctor-photo"><span>👨‍⚕️</span></div>
-                        <div class="doctor-body">
-                            <h3>Логинов Иван Михайлович</h3>
-                            <div class="doctor-spec">Психиатр-нарколог</div>
-                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 14
-                                лет</div>
-                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>5,0</strong> <a
-                                    href="#">38
-                                    отзывов</a>
-                            </div>
-                            <button class="btn btn-outline"
-                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
-                        </div>
+                    <div class="price-card featured">
+                        <div class="price-badge">Рекомендуем</div>
+                        <div class="price-name">Интенсивный курс</div>
+                        <div class="price-amount">от 5 000 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Полная авторская программа медико-социальной реабилитации</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Проживание в 2-местной палате</li>
+                            <li><i class="fas fa-check"></i> Индивидуальное меню диетолога</li>
+                            <li><i class="fas fa-check"></i> Индивидуальные сессии с психотерапевтом (2 раза в неделю)
+                            </li>
+                            <li><i class="fas fa-check"></i> Авторская программа: КПТ, гештальт, арт-терапия</li>
+                            <li><i class="fas fa-check"></i> Семейные сессии с психотерапевтом</li>
+                            <li><i class="fas fa-check"></i> Полный курс ресоциализации и ПЛП</li>
+                            <li><i class="fas fa-check"></i> Гарантия от срыва по договору</li>
+                        </ul>
+                        <button class="btn btn-teal" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Оформить
+                            курс</button>
                     </div>
-                    <div class="doctor-card">
-                        <div class="doctor-photo"><span>👩‍⚕️</span></div>
-                        <div class="doctor-body">
-                            <h3>Ситенкова Кристина Владимировна</h3>
-                            <div class="doctor-spec">Клинический психолог, аддиктолог</div>
-                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 9
-                                лет</div>
-                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,9</strong> <a
-                                    href="#">29
-                                    отзывов</a>
-                            </div>
-                            <button class="btn btn-outline"
-                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
-                        </div>
+                    <div class="price-card">
+                        <div class="price-name">VIP-программа</div>
+                        <div class="price-amount">от 9 500 ₽ <span>/ сутки</span></div>
+                        <div class="price-desc">Индивидуальный подход, максимальный комфорт и конфиденциальность</div>
+                        <ul class="price-features">
+                            <li><i class="fas fa-check"></i> Одноместный VIP-люкс</li>
+                            <li><i class="fas fa-check"></i> Ежедневная личная психотерапия</li>
+                            <li><i class="fas fa-check"></i> Персональный куратор 24/7</li>
+                            <li><i class="fas fa-check"></i> Полная конфиденциальность</li>
+                            <li><i class="fas fa-check"></i> Доступ к SPA и расширенной спортивной инфраструктуре</li>
+                            <li><i class="fas fa-check"></i> Долгосрочное VIP-сопровождение в рамках ПЛП</li>
+                        </ul>
+                        <button class="btn btn-outline" style="width:100%;justify-content:center"
+                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Узнать
+                            подробнее</button>
                     </div>
-                </div>
-                <div
-                    style="margin-top:28px;background:var(--gray-50);border-radius:var(--radius);padding:18px 24px;border:1px solid var(--gray-200);display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-                    <i class="fas fa-stethoscope" style="color:var(--teal);font-size:20px"></i>
-                    <span style="font-size:14px;color:var(--gray-600)">В штате клиники также работают: <strong>невролог,
-                            терапевт,
-                            диетолог, специалист по социальной работе, педагог</strong></span>
                 </div>
             </div>
         </section>
+
+
+        <section class="prices-section">
+            <div class="prices-container">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Стоимость услуг центра</h2>
+
+                <div class="price-table-wrapper">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Направление / Услуга</th>
+                                <th>Длительность</th>
+                                <th>Стоимость</th>
+                                <th>Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-category">
+                                <td colspan="4">Консультации специалистов</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Первичный прием главного врача (психиатра-нарколога)</td>
+                                <td data-label="Длительность">60 мин.</td>
+                                <td data-label="Стоимость" class="price-value">Бесплатно</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Индивидуальная консультация клинического психолога</td>
+                                <td data-label="Длительность">50 мин.</td>
+                                <td data-label="Стоимость" class="price-value">3 500 ₽</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Семейная психотерапия (сессия для родственников)</td>
+                                <td data-label="Длительность">90 мин.</td>
+                                <td data-label="Стоимость" class="price-value">5 000 ₽</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+
+                            <tr class="table-category">
+                                <td colspan="4">Программы реабилитации</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Стационарная комплексная реабилитация (базовый курс)</td>
+                                <td data-label="Длительность">30 дней</td>
+                                <td data-label="Стоимость" class="price-value">от 45 000 ₽</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Интенсивный курс медико-социальной адаптации</td>
+                                <td data-label="Длительность">14 дней</td>
+                                <td data-label="Стоимость" class="price-value">от 28 000 ₽</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Услуга">Амбулаторная программа поддержки (послекурсовая)</td>
+                                <td data-label="Длительность">1 месяц</td>
+                                <td data-label="Стоимость" class="price-value">15 000 ₽</td>
+                                <td data-label="Действие"><a href="#callback" class="btn-price">Записаться</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="price-note">
+                    * Указанные цены являются базовыми. Точная стоимость программы формируется индивидуально после
+                    прохождения
+                    первичного бесплатного приема и составления персонального плана реабилитации.
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ЭТАЖ 5: ВРАЧИ -->
+
 
         <section class="seo-section" style="padding: 60px 0 20px 0; background: var(--white);">
             <div class="container">
@@ -775,71 +838,141 @@
             </div>
         </section>
         <!-- ЦЕНЫ -->
-        <section id="prices" style="padding:72px 0;background:#fff">
+        <section id="doctors">
+            <div class="container">
+                <div class="section-head-row">
+                    <div>
+                        <div class="section-label">Специалисты</div>
+                        <h2 class="section-title">Врачи, которые работают у нас в штате</h2>
+                        <p class="section-desc">Не приглашённые специалисты — постоянная команда с дипломами и
+                            подтверждённым
+                            стажем.
+                        </p>
+                    </div>
+                    <a href="#" class="link-more">Все врачи <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="grid-3">
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👩‍⚕️</span><span class="doctor-badge">Главный врач</span></div>
+                        <div class="doctor-body">
+                            <h3>Калюжная Марина Александровна</h3>
+                            <div class="doctor-spec">Психиатр-нарколог, психотерапевт</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 17
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,8</strong> <a
+                                    href="#">47
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👨‍⚕️</span></div>
+                        <div class="doctor-body">
+                            <h3>Логинов Иван Михайлович</h3>
+                            <div class="doctor-spec">Психиатр-нарколог</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 14
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>5,0</strong> <a
+                                    href="#">38
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-photo"><span>👩‍⚕️</span></div>
+                        <div class="doctor-body">
+                            <h3>Ситенкова Кристина Владимировна</h3>
+                            <div class="doctor-spec">Клинический психолог, аддиктолог</div>
+                            <div class="doctor-exp"><i class="fas fa-clock" style="color:var(--gray-400)"></i> Стаж 9
+                                лет</div>
+                            <div class="doctor-rating"><span class="stars">★★★★★</span> <strong>4,9</strong> <a
+                                    href="#">29
+                                    отзывов</a>
+                            </div>
+                            <button class="btn btn-outline"
+                                style="margin-top:16px;width:100%;justify-content:center">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="margin-top:28px;background:var(--gray-50);border-radius:var(--radius);padding:18px 24px;border:1px solid var(--gray-200);display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+                    <i class="fas fa-stethoscope" style="color:var(--teal);font-size:20px"></i>
+                    <span style="font-size:14px;color:var(--gray-600)">В штате клиники также работают: <strong>невролог,
+                            терапевт,
+                            диетолог, специалист по социальной работе, педагог</strong></span>
+                </div>
+            </div>
+        </section>
+        <!-- ЛИЦЕНЗИИ -->
+        <section style="padding:72px 0;background:var(--gray-50)">
             <div class="container">
                 <div class="section-head">
-                    <div class="section-label">Стоимость</div>
-                    <h2 class="section-title">Пакетные программы реабилитации</h2>
-                    <p class="section-desc">Фиксированная стоимость без скрытых платежей. Все медикаменты, питание и
-                        работа
-                        специалистов включены.</p>
+                    <div class="section-label">Документы</div>
+                    <h2 class="section-title">Лицензии и официальные документы</h2>
                 </div>
-                <div class="price-cards">
-                    <div class="price-card">
-                        <div class="price-name">Базовый курс</div>
-                        <div class="price-amount">от 3 500 ₽ <span>/ сутки</span></div>
-                        <div class="price-desc">Стационарное лечение с медицинским сопровождением</div>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Проживание в 4-местной палате</li>
-                            <li><i class="fas fa-check"></i> 4-разовое питание</li>
-                            <li><i class="fas fa-check"></i> Медикаментозное снятие абстиненции</li>
-                            <li><i class="fas fa-check"></i> Групповые занятия по авторской программе</li>
-                            <li><i class="fas fa-check"></i> Ежедневные врачебные обходы</li>
-                            <li><i class="fas fa-check"></i> Наблюдение персонала 24/7</li>
-                        </ul>
-                        <button class="btn btn-outline" style="width:100%;justify-content:center"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Выбрать
-                            программу</button>
+                <div class="license-grid">
+                    <div>
+                        <div class="license-info">
+                            <table>
+                                <tr>
+                                    <td>Наименование</td>
+                                    <td>ООО «Айтиинвест»</td>
+                                </tr>
+                                <tr>
+                                    <td>ОГРН</td>
+                                    <td>1212300059718</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН/КПП</td>
+                                    <td>2312305298 / 231101001</td>
+                                </tr>
+                                <tr>
+                                    <td>Лицензия</td>
+                                    <td style="color:var(--teal)">№ Л041-01126-23/01066181</td>
+                                </tr>
+                                <tr>
+                                    <td>Выдана</td>
+                                    <td>19 февраля 2024 г.</td>
+                                </tr>
+                                <tr>
+                                    <td>Срок</td>
+                                    <td>Бессрочно</td>
+                                </tr>
+                                <tr>
+                                    <td>Кем выдана</td>
+                                    <td>Минздрав Краснодарского края</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank" class="btn btn-teal"
+                            style="margin-top:16px;display:inline-flex"><i class="fas fa-external-link-alt"></i>
+                            Проверить
+                            на
+                            сайте
+                            Росздравнадзора</a>
                     </div>
-                    <div class="price-card featured">
-                        <div class="price-badge">Рекомендуем</div>
-                        <div class="price-name">Интенсивный курс</div>
-                        <div class="price-amount">от 5 000 ₽ <span>/ сутки</span></div>
-                        <div class="price-desc">Полная авторская программа медико-социальной реабилитации</div>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Проживание в 2-местной палате</li>
-                            <li><i class="fas fa-check"></i> Индивидуальное меню диетолога</li>
-                            <li><i class="fas fa-check"></i> Индивидуальные сессии с психотерапевтом (2 раза в неделю)
-                            </li>
-                            <li><i class="fas fa-check"></i> Авторская программа: КПТ, гештальт, арт-терапия</li>
-                            <li><i class="fas fa-check"></i> Семейные сессии с психотерапевтом</li>
-                            <li><i class="fas fa-check"></i> Полный курс ресоциализации и ПЛП</li>
-                            <li><i class="fas fa-check"></i> Гарантия от срыва по договору</li>
-                        </ul>
-                        <button class="btn btn-teal" style="width:100%;justify-content:center"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Оформить
-                            курс</button>
-                    </div>
-                    <div class="price-card">
-                        <div class="price-name">VIP-программа</div>
-                        <div class="price-amount">от 9 500 ₽ <span>/ сутки</span></div>
-                        <div class="price-desc">Индивидуальный подход, максимальный комфорт и конфиденциальность</div>
-                        <ul class="price-features">
-                            <li><i class="fas fa-check"></i> Одноместный VIP-люкс</li>
-                            <li><i class="fas fa-check"></i> Ежедневная личная психотерапия</li>
-                            <li><i class="fas fa-check"></i> Персональный куратор 24/7</li>
-                            <li><i class="fas fa-check"></i> Полная конфиденциальность</li>
-                            <li><i class="fas fa-check"></i> Доступ к SPA и расширенной спортивной инфраструктуре</li>
-                            <li><i class="fas fa-check"></i> Долгосрочное VIP-сопровождение в рамках ПЛП</li>
-                        </ul>
-                        <button class="btn btn-outline" style="width:100%;justify-content:center"
-                            onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Узнать
-                            подробнее</button>
+                    <div>
+                        <div class="license-scans">
+                            <div class="scan-placeholder"><i class="fas fa-file-alt"></i><span>Медицинская лицензия стр.
+                                    1</span></div>
+                            <div class="scan-placeholder"><i class="fas fa-file-pdf"></i><span>Выписка реестра стр.
+                                    2</span>
+                            </div>
+                            <div class="scan-placeholder"><i class="fas fa-building"></i><span>Свидетельство
+                                    ОГРН/ИНН</span>
+                            </div>
+                            <div class="scan-placeholder"><i class="fas fa-award"></i><span>Сертификаты
+                                    специалистов</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- ОТЗЫВЫ -->
         <section id="reviews" class="bg-gray">
             <div class="container">
@@ -912,6 +1045,64 @@
         </section>
 
         <!-- FAQ -->
+
+
+
+
+        <!-- НОВОСТИ -->
+        <section style="padding:72px 0;background:#fff">
+            <div class="container">
+                <div class="section-head-row">
+                    <div>
+                        <div class="section-label">Новости и статьи</div>
+                        <h2 class="section-title">Полезные материалы от врачей</h2>
+                    </div>
+                    <a href="#" class="link-more">Все статьи <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="grid-4">
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
+                                alt="КПТ"></div>
+                        <div class="news-body">
+                            <div class="news-date">08 июня 2026</div>
+                            <h3>Протоколы КПТ нового поколения в практике центра</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop"
+                                alt="Семья"></div>
+                        <div class="news-body">
+                            <div class="news-date">24 мая 2026</div>
+                            <h3>Синдром выгорания у родственников: как не потерять себя</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=600&auto=format&fit=crop"
+                                alt="Лекция"></div>
+                        <div class="news-body">
+                            <div class="news-date">12 мая 2026</div>
+                            <h3>Нейробиология срывов и методы долгосрочной ремиссии</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="news-card">
+                        <div class="news-img"><img
+                                src="https://images.unsplash.com/photo-1584515933487-7804366f2951?q=80&w=600&auto=format&fit=crop"
+                                alt="Стационар"></div>
+                        <div class="news-body">
+                            <div class="news-date">29 апреля 2026</div>
+                            <h3>Обновление зон групповой терапии: новые стандарты</h3>
+                            <span class="news-link">Читать →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
         <section id="faq" style="padding:72px 0;background:#fff">
             <div class="container">
                 <div class="section-head">
@@ -1006,129 +1197,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- ЛИЦЕНЗИИ -->
-        <section style="padding:72px 0;background:var(--gray-50)">
-            <div class="container">
-                <div class="section-head">
-                    <div class="section-label">Документы</div>
-                    <h2 class="section-title">Лицензии и официальные документы</h2>
-                </div>
-                <div class="license-grid">
-                    <div>
-                        <div class="license-info">
-                            <table>
-                                <tr>
-                                    <td>Наименование</td>
-                                    <td>ООО «Айтиинвест»</td>
-                                </tr>
-                                <tr>
-                                    <td>ОГРН</td>
-                                    <td>1212300059718</td>
-                                </tr>
-                                <tr>
-                                    <td>ИНН/КПП</td>
-                                    <td>2312305298 / 231101001</td>
-                                </tr>
-                                <tr>
-                                    <td>Лицензия</td>
-                                    <td style="color:var(--teal)">№ Л041-01126-23/01066181</td>
-                                </tr>
-                                <tr>
-                                    <td>Выдана</td>
-                                    <td>19 февраля 2024 г.</td>
-                                </tr>
-                                <tr>
-                                    <td>Срок</td>
-                                    <td>Бессрочно</td>
-                                </tr>
-                                <tr>
-                                    <td>Кем выдана</td>
-                                    <td>Минздрав Краснодарского края</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <a href="https://roszdravnadzor.gov.ru/services/licenses" target="_blank" class="btn btn-teal"
-                            style="margin-top:16px;display:inline-flex"><i class="fas fa-external-link-alt"></i>
-                            Проверить
-                            на
-                            сайте
-                            Росздравнадзора</a>
-                    </div>
-                    <div>
-                        <div class="license-scans">
-                            <div class="scan-placeholder"><i class="fas fa-file-alt"></i><span>Медицинская лицензия стр.
-                                    1</span></div>
-                            <div class="scan-placeholder"><i class="fas fa-file-pdf"></i><span>Выписка реестра стр.
-                                    2</span>
-                            </div>
-                            <div class="scan-placeholder"><i class="fas fa-building"></i><span>Свидетельство
-                                    ОГРН/ИНН</span>
-                            </div>
-                            <div class="scan-placeholder"><i class="fas fa-award"></i><span>Сертификаты
-                                    специалистов</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- НОВОСТИ -->
-        <section style="padding:72px 0;background:#fff">
-            <div class="container">
-                <div class="section-head-row">
-                    <div>
-                        <div class="section-label">Новости и статьи</div>
-                        <h2 class="section-title">Полезные материалы от врачей</h2>
-                    </div>
-                    <a href="#" class="link-more">Все статьи <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="grid-4">
-                    <a href="#" class="news-card">
-                        <div class="news-img"><img
-                                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600&auto=format&fit=crop"
-                                alt="КПТ"></div>
-                        <div class="news-body">
-                            <div class="news-date">08 июня 2026</div>
-                            <h3>Протоколы КПТ нового поколения в практике центра</h3>
-                            <span class="news-link">Читать →</span>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card">
-                        <div class="news-img"><img
-                                src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600&auto=format&fit=crop"
-                                alt="Семья"></div>
-                        <div class="news-body">
-                            <div class="news-date">24 мая 2026</div>
-                            <h3>Синдром выгорания у родственников: как не потерять себя</h3>
-                            <span class="news-link">Читать →</span>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card">
-                        <div class="news-img"><img
-                                src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=600&auto=format&fit=crop"
-                                alt="Лекция"></div>
-                        <div class="news-body">
-                            <div class="news-date">12 мая 2026</div>
-                            <h3>Нейробиология срывов и методы долгосрочной ремиссии</h3>
-                            <span class="news-link">Читать →</span>
-                        </div>
-                    </a>
-                    <a href="#" class="news-card">
-                        <div class="news-img"><img
-                                src="https://images.unsplash.com/photo-1584515933487-7804366f2951?q=80&w=600&auto=format&fit=crop"
-                                alt="Стационар"></div>
-                        <div class="news-body">
-                            <div class="news-date">29 апреля 2026</div>
-                            <h3>Обновление зон групповой терапии: новые стандарты</h3>
-                            <span class="news-link">Читать →</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <!-- ФОРМА -->
         <section id="consultation" style="padding:72px 0;background:var(--gray-50)">
             <div class="container">
