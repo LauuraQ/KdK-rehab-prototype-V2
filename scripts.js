@@ -83,4 +83,95 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Благодарим за ваш отзыв! Он отправлен на проверку модератором сайта.');
         document.getElementById('customReviewForm').reset();
     }
+
+    // 1. ЛОГИКА ТАБОВ (ПЕРЕКЛЮЧЕНИЕ ТИПОВ ОТЗЫВА)
+    const tabButtons = document.querySelectorAll('.type-tab-btn');
+    const dynamicZones = document.querySelectorAll('.dynamic-zone-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetType = button.getAttribute('data-type');
+
+            // Убираем активные классы у кнопок и зон
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            dynamicZones.forEach(zone => zone.classList.remove('active'));
+
+            // Добавляем активный класс нажатой кнопке и нужной зоне
+            button.classList.add('active');
+            const targetZone = document.getElementById(`zone-${targetType}`);
+            if (targetZone) targetZone.classList.add('active');
+        });
+    });
+
+    // 2. ЛОГИКА DRAG & DROP ДЛЯ ФАЙЛОВ
+    function setupDragZone(zoneId, inputId) {
+        const zone = document.getElementById(zoneId);
+        const input = document.getElementById(inputId);
+        const preview = zone.querySelector('.file-name-preview');
+
+        if (!zone || !input) return;
+
+        // Клик по зоне открывает проводник
+        zone.addEventListener('click', () => input.click());
+
+        // Изменение инпута при выборе файла вручную
+        input.addEventListener('change', () => {
+            if (input.files.length > 0) {
+                showFilePreview(input.files[0], preview);
+            }
+        });
+
+        // Эффекты перетаскивания над зоной
+        ['dragenter', 'dragover'].forEach(eventName => {
+            zone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                zone.classList.add('dragover');
+            }, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            zone.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                zone.classList.remove('dragover');
+            }, false);
+        });
+
+        // Обработка бросания файла
+        zone.addEventListener('drop', (e) => {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            if (files.length > 0) {
+                input.files = files; // Передаем файлы в скрытый инпут
+                showFilePreview(files[0], preview);
+            }
+        });
+    }
+
+    function showFilePreview(file, previewElement) {
+        previewElement.innerHTML = `<i class="fas fa-check-circle"></i> Выбран файл: ${file.name} (${(file.size / (1024 * 1024)).toFixed(2)} МБ)`;
+        previewElement.style.display = 'block';
+    }
+
+    // Инициализация зон загрузки
+    setupDragZone('audioDragZone', 'audioFileInput');
+    setupDragZone('videoDragZone', 'videoFileInput');
+
+    // 3. ОТПРАВКА ФОРМЫ (Имитация работы для фронтенда)
+    const form = document.getElementById('kdkReviewForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Здесь в будущем будет fetch-запрос к бэкенду.
+        // Сейчас делаем красивый алерт благодарности:
+        alert('Спасибо! Ваш отзыв успешно отправлен на модерацию. После проверки администратором он появится на сайте.');
+        form.reset();
+
+        // Сбрасываем превью файлов
+        document.querySelectorAll('.file-name-preview').forEach(el => {
+            el.style.display = 'none';
+            el.innerHTML = '';
+        });
+    });
 });

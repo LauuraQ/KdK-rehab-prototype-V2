@@ -163,7 +163,101 @@
                 </div>
             </div>
         </section>
+        <section class="section-audio-reviews bg-gray">
+            <div class="reviews-container">
 
+                <div class="reviews-section-header">
+                    <h2 class="reviews-block-title">
+                        <i class="fas fa-volume-up"></i> Аудио-истории выздоровления
+                    </h2>
+                    <p class="reviews-block-description">Записи голосовых сообщений и телефонных звонков от бывших
+                        пациентов и
+                        их родственников. Имена изменены в целях конфиденциальности.</p>
+                </div>
+
+                <div class="audio-compact-grid">
+
+                    <div class="audio-compact-card">
+                        <div class="audio-user-info">
+                            <div class="audio-avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="audio-user-meta">
+                                <h3>Александр, 29 лет</h3>
+                                <span class="audio-compact-tag">Алкогольная зависимость</span>
+                            </div>
+                        </div>
+                        <p class="audio-card-text">«Хочу поблагодарить клинику за новую жизнь. Год назад я приехал сюда
+                            в полном
+                            отчаянии...»</p>
+
+                        <div class="custom-audio-player" data-src="audio/review1.mp3">
+                            <audio src="audio/review1.mp3" preload="metadata"></audio>
+                            <button class="audio-play-btn" aria-label="Воспроизвести">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="audio-progress-container">
+                                <div class="audio-progress-bar"></div>
+                            </div>
+                            <span class="audio-time">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="audio-compact-card">
+                        <div class="audio-user-info">
+                            <div class="audio-avatar-placeholder">
+                                <i class="fas fa-user-nurse"></i>
+                            </div>
+                            <div class="audio-user-meta">
+                                <h3>Мария (мама пациента)</h3>
+                                <span class="audio-compact-tag">Созависимость / Игромания</span>
+                            </div>
+                        </div>
+                        <p class="audio-card-text">«Сын не играет уже 8 месяцев. Огромная благодарность психологам
+                            центра за
+                            работу со всей нашей семьей.»</p>
+
+                        <div class="custom-audio-player" data-src="audio/review2.mp3">
+                            <audio src="audio/review2.mp3" preload="metadata"></audio>
+                            <button class="audio-play-btn" aria-label="Воспроизвести">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="audio-progress-container">
+                                <div class="audio-progress-bar"></div>
+                            </div>
+                            <span class="audio-time">0:00</span>
+                        </div>
+                    </div>
+
+                    <div class="audio-compact-card">
+                        <div class="audio-user-info">
+                            <div class="audio-avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="audio-user-meta">
+                                <h3>Дмитрий, 41 год</h3>
+                                <span class="audio-compact-tag">Реабилитация / Срыв</span>
+                            </div>
+                        </div>
+                        <p class="audio-card-text">«Это была моя третья реабилитация в жизни, но только здесь в КДК
+                            нашли корень
+                            проблемы. Трезв 14 месяцев.»</p>
+
+                        <div class="custom-audio-player" data-src="audio/review3.mp3">
+                            <audio src="audio/review3.mp3" preload="metadata"></audio>
+                            <button class="audio-play-btn" aria-label="Воспроизвести">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="audio-progress-container">
+                                <div class="audio-progress-bar"></div>
+                            </div>
+                            <span class="audio-time">0:00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <div id="pd_widget_big" data-lpu="97263" data-is-initialization="true" class="pd-widget--centered"
             data-new="true">
             <div class="pd-widget">
@@ -707,7 +801,117 @@
 
 
 
+        <section class="section-leave-review">
+            <div class="reviews-container">
+                <div class="review-form-wrapper">
 
+                    <div class="review-form-header">
+                        <h2>Поделитесь вашей историей</h2>
+                        <p>Ваш опыт может спасти чью-то жизнь. Выберите удобный формат: классический текст, голосовое
+                            сообщение
+                            или видео.</p>
+                    </div>
+
+                    <form id="kdkReviewForm" class="review-main-form" autocomplete="off">
+                        <div class="form-row-twin">
+                            <div class="form-group">
+                                <label for="reviewerName">Ваше имя или псевдоним</label>
+                                <input type="text" id="reviewerName" name="name" placeholder="Например, Александр П."
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewerContact">Телефон или Email <span class="label-hint">(для
+                                        подтверждения, не
+                                        публикуется)</span></label>
+                                <input type="text" id="reviewerContact" name="contact" placeholder="+7 (900) 000-00-00"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Формат отзыва</label>
+                            <div class="review-type-tabs">
+                                <button type="button" class="type-tab-btn active" data-type="text">
+                                    <i class="fas fa-file-alt"></i> Текстовый
+                                </button>
+                                <button type="button" class="type-tab-btn" data-type="audio">
+                                    <i class="fas fa-microphone"></i> Аудиозапись
+                                </button>
+                                <button type="button" class="type-tab-btn" data-type="video">
+                                    <i class="fas fa-video"></i> Видео-отзыв
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="review-dynamic-zones">
+
+                            <div class="dynamic-zone-content active" id="zone-text">
+                                <div class="form-group">
+                                    <label for="reviewText">Текст вашего отзыва</label>
+                                    <textarea id="reviewText" name="text_content" rows="5"
+                                        placeholder="Расскажите о вашем пути лечения, реабилитации и результатах..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="dynamic-zone-content" id="zone-audio">
+                                <div class="form-group">
+                                    <label>Загрузите аудиофайл</label>
+                                    <div class="file-upload-dragzone" id="audioDragZone">
+                                        <input type="file" id="audioFileInput" name="audio_file" accept="audio/*"
+                                            class="hidden-file-input">
+                                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                        <p class="upload-text">Перетащите аудиофайл сюда или <span>выберите на
+                                                устройстве</span>
+                                        </p>
+                                        <p class="upload-limits">Допускаются форматы MP3, WAV, M4A (до 20 МБ)</p>
+                                        <div class="file-name-preview"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dynamic-zone-content" id="zone-video">
+                                <div class="form-group">
+                                    <label for="videoUrl">Ссылка на видео (YouTube, Rutube, VK или Облако)</label>
+                                    <input type="url" id="videoUrl" name="video_url"
+                                        placeholder="https://youtube.com/watch?v=...">
+                                </div>
+                                <div class="form-group-separator"><span>или</span></div>
+                                <div class="form-group">
+                                    <label>Загрузить видеофайл напрямую</label>
+                                    <div class="file-upload-dragzone" id="videoDragZone">
+                                        <input type="file" id="videoFileInput" name="video_file" accept="video/*"
+                                            class="hidden-file-input">
+                                        <i class="fas fa-file-video upload-icon"></i>
+                                        <p class="upload-text">Перетащите видео сюда или <span>выберите на
+                                                устройстве</span></p>
+                                        <p class="upload-limits">Допускаются форматы MP4, MOV (до 100 МБ)</p>
+                                        <div class="file-name-preview"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <label class="custom-checkbox-container">
+                                <input type="checkbox" required checked>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-label">Я даю согласие на обработку персональных данных и
+                                    публикацию отзыва
+                                    (включая изменение имени для обеспечения анонимности).</span>
+                            </label>
+                        </div>
+
+                        <div class="form-submit-wrapper">
+                            <button type="submit" class="btn-submit-review">
+                                <span>Отправить отзыв на модерацию</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
