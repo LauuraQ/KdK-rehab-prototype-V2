@@ -5841,3 +5841,285 @@ footer {
 .btn-submit-review:active {
     transform: translateY(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- СЕКЦИЯ: ТАБЛИЦЫ ЦЕН --- */
+.section-price-tables {
+    padding: 64px 0 32px;
+    background: #ffffff;
+}
+
+.price-block-category {
+    margin-bottom: 48px;
+}
+
+.price-category-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid var(--teal);
+    padding-left: 12px;
+}
+
+.price-category-title i {
+    color: var(--teal);
+    font-size: 18px;
+}
+
+/* Стилизация адаптивной таблицы */
+.price-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.kdk-price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    text-align: left;
+    font-size: 15px;
+}
+
+.kdk-price-table th {
+    background: var(--navy);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 16px 24px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.kdk-price-table td {
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--gray-200);
+    color: var(--gray-800);
+    vertical-align: middle;
+}
+
+.kdk-price-table tr:last-child td {
+    border-bottom: none;
+}
+
+.kdk-price-table tr:hover td {
+    background: var(--gray-50);
+}
+
+.service-name strong {
+    display: block;
+    color: var(--navy);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.service-name .service-desc {
+    display: block;
+    font-size: 13px;
+    color: var(--gray-400);
+    font-weight: 400;
+}
+
+.service-cost {
+    font-weight: 700;
+    color: var(--teal);
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.service-cost small {
+    font-weight: 400;
+    color: var(--gray-400);
+    font-size: 13px;
+}
+
+/* Кнопка заказа в таблице */
+.btn-price-order {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--teal);
+    color: var(--teal);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-price-order:hover {
+    background: var(--teal);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(46, 125, 135, 0.2);
+}
+
+/* --- СЕКЦИЯ: РАЙОНЫ ВЫЕЗДА (АККОРДЕОНЫ) --- */
+.section-delivery-regions {
+    padding: 64px 0;
+}
+
+.regions-accordion-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.region-accordion-item {
+    background: #ffffff;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.region-accordion-trigger {
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    transition: background 0.2s;
+}
+
+.region-accordion-trigger:hover {
+    background: var(--gray-50);
+}
+
+.region-title-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.region-title-text i {
+    color: var(--teal);
+}
+
+.region-chevron {
+    color: var(--gray-400);
+    transition: transform 0.25s ease;
+    font-size: 14px;
+}
+
+/* Состояние открытого аккордеона */
+.region-accordion-item.active .region-chevron {
+    transform: rotate(180deg);
+    color: var(--teal);
+}
+
+.region-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #ffffff;
+}
+
+.region-info-grid {
+    padding: 0 24px 28px 24px;
+    border-top: 1px solid var(--gray-100);
+}
+
+.region-price-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--teal-light);
+    color: var(--navy);
+    padding: 12px 16px;
+    border-radius: calc(var(--radius) - 4px);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 16px 0 24px 0;
+}
+
+.region-price-notice i {
+    color: var(--teal);
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+/* Колонки со списками населенных пунктов */
+.region-lists-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .region-lists-columns {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.region-list-block h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.region-list-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.region-list-block ul li {
+    font-size: 14px;
+    color: var(--gray-600);
+    padding: 6px 0;
+    border-bottom: 1px dashed var(--gray-100);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.region-list-block ul li::before {
+    content: "•";
+    color: var(--gray-400);
+    font-weight: bold;
+}
+
+.region-list-block ul li:last-child {
+    border-bottom: none;
+}
